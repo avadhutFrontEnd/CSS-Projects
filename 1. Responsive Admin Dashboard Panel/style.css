@@ -122,6 +122,7 @@ nav .menu-items {
 body.dark li a:hover:before {
   background-color: var(--text-color);
 }
+
 .menu-items li a i {
   font-size: 24px;
   min-width: 45px;
