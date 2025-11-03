@@ -23,6 +23,8 @@
 
   /* ======= Background Colors ========= */
   --sidebar-color: #3a3644;
+  --sidebar-color-80: rgba(58, 54, 68, 0.75);
+  --sidebar-color-60: rgba(58, 54, 68, 0.6);
   --sidebar-dark: #2d2836;
   --panel-color: #1a1a1a;
   --card-bg: #2d2836;
@@ -108,8 +110,8 @@ nav {
   height: 100%;
   width: 250px;
   padding: 10px 14px;
-  background-color: var(--sidebar-color);
-  border-right: 1px solid var(--border-color);
+  background-color: var(--sidebar-color-80);
+  /* border-right: 1px solid var(--border-color); */
   transition: var(--tran-05);
 }
 
@@ -297,7 +299,7 @@ nav .menu-items {
   gap: 12px;
   /* padding: 16px 20px; */
   margin-top: 30px;
-  border-top: 1px solid var(--border-color);
+  /* border-top: 1px solid var(--border-color); */
 }
 
 .profile-image {
@@ -378,4 +380,546 @@ nav .menu-items {
 }
 
 .dashboard {
+  position: relative;
+  left: 250px;
+  min-height: 100vh;
+  width: calc(100% - 250px);
+  transition: var(--tran-05);
+}
+
+.dashboard .header {
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  /* padding: 10px 14px; */
+  padding: 20px 30px;
+  /* background-color: red; */
+  /* background-color: var(--sidebar-color); */
+  background-color: var(--card-bg);
+  transition: var(--tran-05);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+}
+
+.header-first-row-label-name {
+  /* font-size: 24px; */
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-right: 12px;
+}
+
+.header-first-row-label-number {
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--text-color);
+  /* background-color: rgba(255, 255, 255, 0.15); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  /* color: var(--text-color); */
+  color: var(--card-bg);
+}
+
+.header-first-row-label-button {
+  height: 42px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /* margin-top: 10px; */
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  color: var(--text-color);
+  cursor: pointer;
+  border: 2px solid var(--primary-hover);
+  transition: var(--tran-03);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-first-row-label-button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.header-first-row-label-button svg {
+  flex-shrink: 0;
+}
+
+.header-second-row {
+  gap: 20px;
+}
+
+/* Search Bar */
+.header-second-row-search-bar {
+  position: relative;
+  width: 420px;
+  height: 44px;
+}
+
+.header-second-row-search-bar input {
+  width: 100%;
+  height: 100%;
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0 45px 0 20px;
+  font-size: 14px;
+  color: var(--text-color);
+  outline: none;
+  transition: var(--tran-03);
+}
+
+.header-second-row-search-bar input::placeholder {
+  color: var(--text-muted);
+}
+
+.header-second-row-search-bar input:focus {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.header-second-row-search-bar svg {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-color);
+  pointer-events: none;
+}
+
+/* Buttons Container */
+.header-second-row-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+/* Base Button Style */
+.header-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 10px 18px;
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--tran-03);
+  white-space: nowrap;
+}
+.header-btn svg {
+  fill: var(--text-color);
+}
+
+.header-btn:hover {
+  background-color: var(--card-hover);
+  border-color: var(--primary-color);
+}
+
+.header-btn:hover svg {
+  color: var(--primary-color);
+}
+
+.header-btn:hover span {
+  color: var(--primary-color);
+}
+
+.download-btn:hover svg {
+  fill: var(--primary-color);
+  /* stroke: var(--primary-color); */
+}
+
+.header-btn svg {
+  flex-shrink: 0;
+}
+
+.dashboard .main-area {
+  padding-top: 176px;  /*  146px of header-height + 20px padding of main-area*/
+}
+
+.main-area {
+  padding-top: 146px;
+  background-color: #0b0c0c;
+  height: fit-content;
+  padding: 20px 30px;
+}
+
+.status-bar {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.status-bar-item {
+  width: 340px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  background-color: var(--card-bg);
+  /* border: 2px solid var(--border-color); */
+  border-radius: 12px;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--tran-03);
+  white-space: nowrap;
+}
+
+.pending svg {
+  fill: var(--text-color);
+}
+
+.progress svg {
+  fill: var(--text-color);
+}
+
+.successful svg {
+  fill: var(--status-success);
+}
+
+.declined svg {
+  fill: var(--status-declined);
+}
+
+.status-bar-content {
+  display: flex;
+  /* column-gap: 80px; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.status-bar-content .status-bar-label {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.status-bar-content .status-bar-amount {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Grid card component  */
+/* ======== Grid Card Container ======== */
+.grid-card-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+/* ======== Deal Card ======== */
+.deal-card {
+  
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius-md);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+  transition: var(--tran-03);
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.deal-card:hover {
+  background-color: var(--card-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Special highlight for featured cards */
+.deal-card.featured {
+  border: 2px solid var(--primary-color);
+}
+
+.deal-card.premium {
+  background: linear-gradient(135deg, #ff6b8a 0%, #ff8a6b 50%, #ffb88e 100%);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(255, 107, 138, 0.3);
+  margin-bottom: 0;
+}
+
+/* .deal-card.premium:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(255, 107, 138, 0.4);
+} */
+
+/* Card Header */
+.deal-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deal-card-company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.deal-card-company-name {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-semibold);
+  color: var(--text-color);
+}
+
+.deal-card-logo {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.deal-card-logo img,
+.deal-card-logo svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Card Amount Section */
+.deal-card-amount-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deal-card-amount {
+  font-size: 28px;
+  font-weight: var(--font-bold);
+  color: var(--text-color);
+}
+
+/* .deal-card-frequency {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-sm);
+} */
+
+.deal-card-frequency {
+  font-size: 20px;
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+}
+
+/* Card Description */
+.deal-card-description {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Card Footer */
+.deal-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  /* border-top: 1px solid var(--border-color); */
+}
+
+.deal-card-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.deal-card-user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.deal-card-user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deal-card-user-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.deal-card-timestamp {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* Premium Plan Card Specific Styles */
+.deal-card.premium .deal-card-company-name,
+.deal-card.premium .deal-card-amount,
+.deal-card.premium .deal-card-description {
+  color: var(--text-color);
+}
+
+.deal-card.premium .premium-plan-title {
+  /* font-size: 20px;
+  font-weight: var(--font-bold);
+  color: var(--text-color);
+  margin-bottom: 8px; */
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.deal-card.premium .premium-plan-subtitle {
+  /* font-size: var(--font-size-sm);
+  font-weight: var(--font-regular);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 16px; */
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.deal-card.premium .premium-plan-button {
+  /* width: 100%;
+  padding: 12px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--border-radius-md);
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transition: var(--tran-03);
+  text-align: center; */
+  width: 100%;
+  padding: 18px 24px;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--tran-03);
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+/* .deal-card.premium .premium-plan-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+} */
+
+.premium-plan-button:hover {
+  background-color: #2d2d2d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.premium-plan-button:active {
+  transform: translateY(0);
+}
+
+
+/* Responsive Grid */
+@media (max-width: 1400px) {
+  .grid-card-container {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* deal-card-background */ 
+.deal-card-background:hover {
+  border: 2px dashed var(--text-secondary);
+ border-radius: 10px;
+ padding: 0 0 20px 20px;
+background-color: rgba(255, 107, 138, 0.4);
+}
+
+.deal-card-background:hover .deal-card:hover{
+  
+}
+
+/* Base styles for the wrapper */
+.deal-card-background {
+  position: relative;
+  border-radius: 10px; /* Base radius for consistency */
+  transition: background-color 0.2s ease, border 0.2s ease;
+  overflow: visible; /* Allows the inner card to "get out" beyond bounds without clipping */
+}
+
+/* Hover effect: Pink background and dashed border on wrapper */
+.deal-card-background:hover {
+  background-color: rgba(255, 107, 138, 0.4);
+  border: 2px dashed var(--text-secondary);
+}
+
+/* Lift the inner card up and to the right more dramatically to "get out" of the background area */
+.deal-card-background:hover .deal-card {
+  transform: translate(20px, -20px) scale(1.02); /* Increased shift for protrusion; subtle scale for pop */
+  transition: transform 0.3s ease; /* Slightly longer for emphasis */
+  z-index: 1; /* Ensures it layers above siblings if overlapping */
+  opacity: 0.985;
+  width: 300px;
 }
