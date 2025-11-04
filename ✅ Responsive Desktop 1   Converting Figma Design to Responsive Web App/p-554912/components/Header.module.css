@@ -1,0 +1,125 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.titleContainer {
+  color: #b9b9b9;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.badge {
+  color: #848486;
+  background-color: #232327;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.searchContainer {
+  width: 240px;
+  position: relative;
+}
+
+.searchInput {
+  color: #505053;
+  background-color: #1b1b1e;
+  border: 1px solid #262736;
+  border-radius: 9px;
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  font-size: 12px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.actionsContainer {
+  gap: 10px;
+  display: flex;
+}
+
+.actionButton {
+  color: #969697;
+  cursor: pointer;
+  background-color: #1a1a1d;
+  border: 1px solid #283042;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+}
+
+.newDealButton {
+  color: #f5a3b2;
+  cursor: pointer;
+  background-color: #f9395b;
+  border: none;
+  border-radius: 9px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+}
+
+.plusIcon {
+  width: 11px;
+  height: 11px;
+}
+
+@media (width<=991px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .searchContainer {
+    order: 2;
+    width: 100%;
+  }
+
+  .actionsContainer {
+    order: 3;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (width<=640px) {
+  .actionsContainer {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .actionButton {
+    justify-content: center;
+    width: calc(50% - 5px);
+  }
+
+  .newDealButton {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+}

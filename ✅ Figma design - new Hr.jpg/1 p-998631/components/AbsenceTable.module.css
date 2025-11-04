@@ -1,0 +1,414 @@
+.tableSection {
+  flex-direction: column;
+  width: 100%;
+  min-height: 535px;
+  margin-top: 18px;
+  padding-top: 5px;
+  padding-bottom: 14px;
+  padding-left: 5px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .tableSection {
+    max-width: 100%;
+  }
+}
+
+.tableBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.tableHeader {
+  z-index: 10;
+  background-color: transparent;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  padding: 11px 16px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .tableHeader {
+    max-width: 100%;
+    margin-right: 10px;
+    padding-left: 20px;
+  }
+}
+
+.tableTitle {
+  color: #555369;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.tableActions {
+  color: #787882;
+  align-items: stretch;
+  gap: 27px;
+  font-size: 14px;
+  display: flex;
+}
+
+.filterAction {
+  align-items: stretch;
+  gap: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.filterIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 16px;
+}
+
+.actionButtons {
+  aspect-ratio: 2.96;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 148px;
+  max-width: 100%;
+}
+
+.divider {
+  background-color: #fafafa;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 3px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .divider {
+    margin-right: 7px;
+  }
+}
+
+.tableContainer {
+  background-color: transparent;
+  padding-top: 12px;
+  padding-left: 5px;
+  padding-right: 23px;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .tableContainer {
+    max-width: 100%;
+    margin-right: -8px;
+    padding-right: 20px;
+  }
+}
+
+.tableColumnHeaders {
+  z-index: 10;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 3px 5px;
+  font-size: 11px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .tableColumnHeaders {
+    max-width: 100%;
+  }
+}
+
+.columnHeader {
+  color: #91919e;
+  white-space: nowrap;
+  align-items: stretch;
+  gap: 20px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .columnHeader {
+    white-space: initial;
+  }
+}
+
+.columnIcon {
+  aspect-ratio: 1.07;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 16px;
+}
+
+.columnHeaderGroup {
+  align-items: stretch;
+  gap: 40px 100px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .columnHeaderGroup {
+    max-width: 100%;
+  }
+}
+
+.columnHeaderText {
+  color: #9292a1;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.tableBody {
+  flex-direction: column;
+  width: 100%;
+  min-height: 397px;
+  margin-top: -4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .tableBody {
+    max-width: 100%;
+  }
+}
+
+.tableBodyBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.rowDivider {
+  background-color: #fcfcfc;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 3px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .rowDivider {
+    margin-right: 9px;
+  }
+}
+
+.noteRow {
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  min-height: 50px;
+  padding: 9px 14px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .noteRow {
+    max-width: 100%;
+  }
+}
+
+.noteSection {
+  color: #678dd3;
+  align-items: stretch;
+  gap: 13px;
+  font-size: 14px;
+  display: flex;
+  position: relative;
+}
+
+.noteLink {
+  align-items: stretch;
+  gap: 3px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.noteLinkText {
+  flex-grow: 1;
+}
+
+.noteLinkIcon {
+  aspect-ratio: 0.87;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: 7px;
+  margin-top: 6px;
+}
+
+.noteAvatar {
+  aspect-ratio: 1.06;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  flex-shrink: 0;
+  width: 35px;
+}
+
+.tableDivider {
+  aspect-ratio: 166.67;
+  object-fit: contain;
+  object-position: center;
+  width: 996px;
+  max-width: 996px;
+}
+
+@media (width <= 991px) {
+  .tableDivider {
+    max-width: 100%;
+  }
+}
+
+.actionDropdown {
+  white-space: nowrap;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 14px;
+  display: flex;
+  position: absolute;
+  right: 50px;
+  top: 70%;
+  z-index: 100;
+}
+
+@media (width <= 991px) {
+  .actionDropdown {
+    white-space: initial;
+  }
+}
+
+.dropdownItem {
+  color: #7b7b84;
+  background-color: #fdfdfd;
+  border: 1px solid #f6f5f5;
+  border-radius: 3px 10px 13px 4px;
+  align-items: stretch;
+  gap: 6px;
+  padding: 11px 15px;
+  font-size: 13px;
+  display: flex;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .dropdownItem {
+    white-space: initial;
+    margin-right: -6px;
+  }
+}
+
+.dropdownIcon {
+  aspect-ratio: 1.18;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.dropdownText {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 110px;
+}
+
+.deleteButton {
+  color: #8f585a;
+  background-color: #fdebea;
+  border: none;
+  border-radius: 0 0 3px;
+  align-items: stretch;
+  gap: 9px;
+  padding: 11px 13px;
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: left;
+}
+
+@media (width <= 991px) {
+  .deleteButton {
+    white-space: initial;
+    margin-right: 5px;
+  }
+}
+
+.deleteIcon {
+  aspect-ratio: 0.83;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: 10px;
+}
+
+.deleteText {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 98px;
+}
+
+.sickLeaveType {
+  background-color: #f9f5e1;
+  border: 1px solid #fcfbf1;
+}
+
+.vacationType {
+  background-color: #e3f3e8;
+  border: 1px solid #f2f8f4;
+}
+
+.educationType {
+  background-color: #f8eae2;
+  border: 1px solid #f7f1ed;
+}
+
+.requestedStatus {
+  color: #617590;
+  font-weight: 300;
+}

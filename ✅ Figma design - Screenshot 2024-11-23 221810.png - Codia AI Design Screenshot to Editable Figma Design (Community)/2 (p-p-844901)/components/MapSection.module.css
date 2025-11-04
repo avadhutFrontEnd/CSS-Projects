@@ -1,0 +1,99 @@
+.mapSection {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.mapContainer {
+  border-radius: 0 0 0 18px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mapImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.locationMarker {
+  background-color: #fff;
+  border: 1px solid #dbe9d7;
+  border-radius: 7px;
+  padding: 12px;
+  position: absolute;
+}
+
+.locationMarker:nth-child(2) {
+  top: 30%;
+  left: 25%;
+}
+
+.locationMarker:nth-child(3) {
+  bottom: 30%;
+  right: 25%;
+}
+
+.locationInfo {
+  flex-direction: column;
+  font-size: 11px;
+  display: flex;
+}
+
+.locationAddress {
+  color: #c5cbd2;
+  margin-bottom: 4px;
+}
+
+.locationCity {
+  color: #7b7e82;
+}
+
+.statsContainer {
+  background-color: #fff;
+  border-radius: 9px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.statItem {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.statIcon {
+  width: 13px;
+  height: 12px;
+}
+
+.statInfo {
+  flex-direction: column;
+  display: flex;
+}
+
+.statLabel {
+  color: #86888d;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.statValue {
+  color: #c3c9d1;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+@media (width<=640px) {
+  .mapContainer {
+    height: 300px;
+  }
+
+  .statsContainer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,46 @@
+.sidebar {
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  width: 115px;
+  padding: 31px 33px 0;
+  display: flex;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 64px;
+}
+
+.navItems {
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  display: flex;
+}
+
+.navIcon {
+  width: 19px;
+  height: 19px;
+}
+
+.navItem {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.profileIcon {
+  border-radius: 50%;
+  width: 30px;
+  height: 31px;
+}
+
+@media (width<=640px) {
+  .sidebar {
+    width: 60px;
+    padding: 20px 10px;
+  }
+}

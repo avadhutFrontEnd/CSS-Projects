@@ -1,0 +1,123 @@
+.storeCard {
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  padding: 15px 22px;
+  display: flex;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.storeInfo {
+  align-items: stretch;
+  gap: 18px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+}
+
+.logoContainer {
+  aspect-ratio: 1.021;
+  color: #515051;
+  white-space: nowrap;
+  flex-direction: column;
+  padding: 24px 7px 15px;
+  font-size: 10px;
+  display: flex;
+  position: relative;
+}
+
+.storeLogo {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.logoText {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.logoSubImage {
+  aspect-ratio: 1.78;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.storeDetails {
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.storeName {
+  color: #a7a7a7;
+  align-self: start;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.storeMetadata {
+  align-items: stretch;
+  gap: 13px;
+  margin-top: 11px;
+  font-size: 9px;
+  display: flex;
+}
+
+.storeDistance {
+  color: #7d7d7d;
+}
+
+.storeHours {
+  color: #458c6a;
+}
+
+.actionButtons {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.iconButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.favoriteIcon {
+  aspect-ratio: 0.94;
+  object-fit: contain;
+  object-position: center;
+  width: 15px;
+}
+
+.shareIcon {
+  aspect-ratio: 1.07;
+  object-fit: contain;
+  object-position: center;
+  width: 15px;
+  margin-top: 12px;
+}
+
+@media (width <= 991px) {
+  .storeCard {
+    padding-left: 20px;
+  }
+
+  .logoContainer {
+    white-space: initial;
+  }
+}

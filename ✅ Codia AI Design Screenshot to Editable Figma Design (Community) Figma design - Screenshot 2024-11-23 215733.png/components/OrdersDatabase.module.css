@@ -1,0 +1,176 @@
+.databaseSection {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 4px;
+  padding: 2px 19px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .databaseSection {
+    max-width: 100%;
+  }
+}
+
+.databaseContainer {
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  min-height: 53px;
+  padding: 2px 6px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .databaseContainer {
+    max-width: 100%;
+  }
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.databaseHeader {
+  align-self: start;
+  align-items: stretch;
+  gap: 3px;
+  display: flex;
+  position: relative;
+}
+
+.databaseIcon {
+  aspect-ratio: 0.98;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 17px 0 0 16px;
+  flex-shrink: 0;
+  width: 47px;
+}
+
+.databaseInfo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.databaseTitle {
+  color: #9d9d9d;
+  font-size: 11px;
+  margin: 0;
+  font-weight: 600;
+}
+
+@media (width <= 991px) {
+  .databaseTitle {
+    margin-right: 8px;
+  }
+}
+
+.databaseDate {
+  color: #5d5d5d;
+  margin-top: 9px;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.databaseActions {
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 29px;
+  display: flex;
+  position: relative;
+}
+
+.notificationContainer {
+  color: #878787;
+  align-items: stretch;
+  gap: 6px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 9px;
+  display: flex;
+}
+
+.notificationIcon {
+  aspect-ratio: 1.14;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 16px;
+}
+
+.notificationText {
+  flex-basis: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.actionsContainer {
+  color: #939393;
+  flex: auto;
+  align-items: stretch;
+  gap: 3px;
+  font-size: 11px;
+  display: flex;
+}
+
+.actionIcon {
+  aspect-ratio: 0.98;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 18px;
+  flex-shrink: 0;
+  width: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.downloadButton {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-self: start;
+  align-items: stretch;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.downloadButtonBg {
+  background-color: #1e1e1e;
+  border: 1px solid #42413f;
+  border-radius: 19px;
+  padding: 16px 17px;
+  color: #939393;
+}
+
+@media (width <= 991px) {
+  .downloadButtonBg {
+    padding-right: 20px;
+  }
+}
+
+.reportImage {
+  aspect-ratio: 2.78;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 136px;
+  max-width: 100%;
+}

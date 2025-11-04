@@ -1,0 +1,905 @@
+.container {
+  max-width: 903px;
+}
+
+.dashboardWrapper {
+  flex-direction: column;
+  width: 100%;
+  min-height: 648px;
+  padding: 72px 5px 3px 22px;
+  display: flex;
+  position: relative;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.contentContainer {
+  width: 100%;
+  position: relative;
+}
+
+.mainGrid {
+  gap: 20px;
+  display: flex;
+}
+
+.leftColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 56%;
+  margin-left: 0;
+  line-height: normal;
+  display: flex;
+}
+
+.transactionGrid {
+  width: 100%;
+  position: relative;
+}
+
+.transactionGridRow {
+  gap: 20px;
+  display: flex;
+}
+
+.transactionColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 50%;
+  margin-left: 0;
+  line-height: normal;
+  display: flex;
+}
+
+.transactionCard {
+  background-color: transparent;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 1px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+}
+
+.cardBackground {
+  background-color: #232327;
+  border: 1px solid #1d1d20;
+  border-radius: 7px;
+  width: 100%;
+  padding: 15px 18px;
+}
+
+.cardHeader {
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  display: flex;
+}
+
+.vendorInfo {
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 5px;
+  display: flex;
+}
+
+.vendorName {
+  color: #8e8e90;
+  align-self: start;
+  font-size: 12px;
+}
+
+.amount {
+  color: #afafb0;
+  margin-top: 14px;
+  font-size: 17px;
+}
+
+.paymentTypeWrapper {
+  color: #89898b;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 12px;
+  display: flex;
+}
+
+.paymentTypeIcon {
+  aspect-ratio: 0.65;
+  object-fit: contain;
+  object-position: center;
+  align-self: end;
+  width: 13px;
+}
+
+.paymentType {
+  margin-top: 18px;
+}
+
+.description {
+  color: #626264;
+  margin-top: 15px;
+  font-size: 10px;
+}
+
+.cardFooter {
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  margin-top: 11px;
+  font-size: 10px;
+  display: flex;
+}
+
+.userInfo {
+  color: #868688;
+  align-items: stretch;
+  gap: 8px;
+  display: flex;
+}
+
+.userAvatar {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 23px;
+}
+
+.userName {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.transactionDate {
+  color: #848486;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.paymentDetails {
+  color: #88888a;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 12px;
+  display: flex;
+}
+
+.rightColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 44%;
+  margin-left: 20px;
+  line-height: normal;
+  display: flex;
+}
+
+.rightColumnContent {
+  flex-grow: 1;
+  align-items: stretch;
+  gap: 5px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.rightColumnTop {
+  flex-direction: column;
+  align-self: start;
+  align-items: start;
+  display: flex;
+}
+
+.adobeCardBackground {
+  background-color: #222226;
+  border: 1px solid #211e21;
+  border-radius: 9px 9px 0 3px;
+  width: 100%;
+  padding: 14px 17px;
+}
+
+.burgerKingCardBackground {
+  background-color: #3c252c;
+  border-radius: 6px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 14px 18px;
+  display: flex;
+}
+
+.burgerKingHeader {
+  color: #aea7aa;
+  align-self: start;
+  align-items: stretch;
+  gap: 11px;
+  font-size: 12px;
+  display: flex;
+}
+
+.burgerKingIcon {
+  aspect-ratio: 0.89;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 17px;
+}
+
+.burgerKingName {
+  color: #aea7aa;
+}
+
+.burgerKingContent {
+  align-items: stretch;
+  gap: 40px 41px;
+  width: 100%;
+  margin-top: 13px;
+  display: flex;
+}
+
+.burgerKingInfo {
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+  display: flex;
+}
+
+.burgerKingAmount {
+  color: #b5adaf;
+  align-self: start;
+  font-size: 17px;
+}
+
+.burgerKingDescription {
+  color: #6f6366;
+  margin-top: 18px;
+  font-size: 10px;
+}
+
+.burgerKingPaymentType {
+  color: #9c9094;
+  white-space: nowrap;
+  flex: 1;
+  align-self: start;
+  align-items: start;
+  gap: 9px;
+  font-size: 12px;
+  display: flex;
+}
+
+.burgerKingPaymentIcon {
+  aspect-ratio: 0.88;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 15px;
+  margin-top: 12px;
+}
+
+.burgerKingPaymentText {
+  color: #9c9094;
+}
+
+.burgerKingFooter {
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: 11px;
+  display: flex;
+}
+
+.burgerKingUser {
+  color: #978a8e;
+  align-items: stretch;
+  gap: 9px;
+  font-size: 10px;
+  display: flex;
+}
+
+.burgerKingUserAvatar {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.burgerKingUserName {
+  color: #978a8e;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.burgerKingDate {
+  color: #94878b;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 9px;
+}
+
+.rightColumnBottom {
+  font-size: 10px;
+}
+
+.payoneerCardBackground {
+  background-color: #222326;
+  border: 1px solid #392b2d;
+  border-radius: 13px 0 0 14px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 18px;
+  display: flex;
+}
+
+.shutterstockCardBackground {
+  background-color: #222226;
+  border: 1px solid #3d3032;
+  border-radius: 13px 0 0 14px;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 16px 4px 16px 18px;
+  display: flex;
+}
+
+.bottomCardsRow {
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 16px;
+  margin-top: 8px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.airbnbCard {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px;
+  display: flex;
+}
+
+.airbnbHeader {
+  color: #9a9a9c;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  font-size: 12px;
+  display: flex;
+}
+
+.vendorIcon {
+  aspect-ratio: 0.89;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 17px;
+}
+
+.airbnbAmountRow {
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: 14px;
+  display: flex;
+}
+
+.premiumCard {
+  background-color: transparent;
+  align-self: stretch;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-size: 12px;
+}
+
+.premiumCardContent {
+  aspect-ratio: 1.636;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: start;
+  padding: 13px 11px;
+  display: flex;
+  position: relative;
+}
+
+.premiumBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+}
+
+.premiumTitle {
+  color: #f5b2ba;
+  font-size: 15px;
+  position: relative;
+}
+
+.premiumDescription {
+  color: #f5a3a5;
+  margin-top: 10px;
+  line-height: 14px;
+  position: relative;
+}
+
+.premiumButton {
+  color: #929292;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: stretch;
+  margin-top: 18px;
+  padding: 4px;
+  display: flex;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.premiumButtonBackground {
+  background-color: #0b0c0c;
+  border: 1px solid #6c2e26;
+  border-radius: 4px;
+  padding: 15px 48px;
+}
+
+.payoneerMarketingCard {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px 2px;
+  display: flex;
+}
+
+.payoneerMarketingBackground {
+  background-color: #222225;
+  border: 6px solid #1a1b1e;
+  border-radius: 9px;
+  width: 100%;
+  padding: 16px 17px;
+}
+
+.payoneerMarketingHeader {
+  color: #929294;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  font-size: 12px;
+  display: flex;
+}
+
+.payoneerMarketingContent {
+  align-items: stretch;
+  gap: 19px;
+  margin-top: 14px;
+  display: flex;
+}
+
+.payoneerMarketingInfo {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.amazonCard {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px;
+  display: flex;
+}
+
+.amazonCardBackground {
+  background-color: #222226;
+  border: 1px solid #3d3032;
+  border-radius: 13px 0 0 14px;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 18px 4px 18px 18px;
+  display: flex;
+}
+
+.bottomRow {
+  margin-top: 4px;
+  position: relative;
+}
+
+.bottomRowGrid {
+  gap: 20px;
+  display: flex;
+}
+
+.uberColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 28%;
+  margin-left: 0;
+  line-height: normal;
+  display: flex;
+}
+
+.uberCard {
+  background-color: transparent;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 1px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.uberCardBackground {
+  background-color: #232327;
+  border-radius: 10px 6px 0 0;
+  width: 100%;
+  padding: 13px 18px 4px;
+}
+
+.uberHeader {
+  color: #9c9c9d;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  font-size: 12px;
+  display: flex;
+}
+
+.uberContent {
+  align-items: stretch;
+  gap: 8px;
+  margin-top: 13px;
+  display: flex;
+}
+
+.uberInfo {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.dribbbleColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 28%;
+  margin-left: 20px;
+  line-height: normal;
+  display: flex;
+}
+
+.dribbbleCard {
+  background-color: transparent;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 4px;
+  padding: 1px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.dribbbleCardBackground {
+  background-color: #232327;
+  border-radius: 9px 7px 0 0;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 15px 18px 1px;
+  display: flex;
+}
+
+.dribbbleHeader {
+  white-space: nowrap;
+  align-items: start;
+  gap: 40px 75px;
+  display: flex;
+}
+
+.dribbbleInfo {
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+  display: flex;
+}
+
+.dribbblePaymentType {
+  color: #909091;
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+  font-size: 11px;
+  display: flex;
+}
+
+.paypalColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 28%;
+  margin-left: 20px;
+  line-height: normal;
+  display: flex;
+}
+
+.paypalCard {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.paypalCardBackground {
+  background-color: #232327;
+  border-radius: 10px 10px 0 0;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  padding: 15px 19px 1px;
+  display: flex;
+}
+
+.paypalInfo {
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 5px;
+  font-size: 10px;
+  display: flex;
+}
+
+.paypalPaymentDetails {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.airlinesColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 15%;
+  margin-left: 20px;
+  line-height: normal;
+  display: flex;
+}
+
+.airlinesCard {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  height: 127px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.airlinesCardBackground {
+  background-color: #232327;
+  border-radius: 13px 0 19px;
+  flex-direction: column;
+  align-items: start;
+  width: 126px;
+  height: 126px;
+  padding: 17px 1px 5px 19px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .dashboardWrapper {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
+  .contentContainer {
+    max-width: 100%;
+  }
+
+  .mainGrid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .leftColumn {
+    width: 100%;
+  }
+
+  .transactionGrid {
+    max-width: 100%;
+    margin-top: 17px;
+  }
+
+  .transactionGridRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .transactionColumn {
+    width: 100%;
+  }
+
+  .transactionCard {
+    margin-top: 16px;
+  }
+
+  .cardHeader {
+    white-space: initial;
+  }
+
+  .vendorInfo {
+    white-space: initial;
+  }
+
+  .paymentTypeWrapper {
+    white-space: initial;
+  }
+
+  .description {
+    margin-right: 6px;
+  }
+
+  .rightColumn {
+    width: 100%;
+  }
+
+  .rightColumnContent {
+    margin-top: 17px;
+  }
+
+  .burgerKingPaymentType {
+    white-space: initial;
+  }
+
+  .burgerKingPaymentText {
+    margin-left: 7px;
+    margin-right: 3px;
+  }
+
+  .burgerKingDate {
+    margin-top: 40px;
+    margin-right: 2px;
+  }
+
+  .payoneerCardBackground {
+    padding-right: 20px;
+  }
+
+  .airbnbHeader {
+    white-space: initial;
+  }
+
+  .airbnbAmountRow {
+    white-space: initial;
+    margin-right: 8px;
+  }
+
+  .premiumButtonBackground {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .payoneerMarketingContent {
+    margin-right: 2px;
+  }
+
+  .bottomRow {
+    max-width: 100%;
+  }
+
+  .bottomRowGrid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .uberColumn {
+    width: 100%;
+  }
+
+  .uberCard {
+    margin-top: 18px;
+  }
+
+  .uberContent {
+    margin-right: 3px;
+  }
+
+  .uberHeader {
+    white-space: initial;
+  }
+
+  .dribbbleColumn {
+    width: 100%;
+  }
+
+  .dribbbleCard {
+    margin-top: 21px;
+  }
+
+  .dribbbleHeader {
+    white-space: initial;
+  }
+
+  .dribbbleInfo {
+    white-space: initial;
+  }
+
+  .dribbblePaymentType {
+    white-space: initial;
+  }
+
+  .paymentType {
+    margin-right: 3px;
+  }
+
+  .paypalColumn {
+    width: 100%;
+  }
+
+  .paypalCard {
+    margin-top: 21px;
+  }
+
+  .paypalCardBackground {
+    white-space: initial;
+  }
+
+  .paypalInfo {
+    white-space: initial;
+  }
+
+  .airlinesColumn {
+    width: 100%;
+  }
+
+  .airlinesCard {
+    margin-top: 17px;
+  }
+}

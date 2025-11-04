@@ -1,0 +1,145 @@
+.vehicleDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.vehicleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 289px;
+  max-width: 100%;
+  padding: 12px 24px 12px 10px;
+  white-space: nowrap;
+}
+
+.vehicleBrand {
+  color: #7a7d81;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.brandLogo {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+  flex-shrink: 0;
+  width: 31px;
+}
+
+.brandName {
+  margin: auto 0;
+}
+
+.ratingContainer {
+  color: #7e8085;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: auto 0;
+  font-size: 12px;
+}
+
+.starIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: 13px;
+}
+
+.vehicleImage {
+  aspect-ratio: 125;
+  object-fit: contain;
+  object-position: center;
+  align-self: center;
+  width: 256px;
+  max-width: 100%;
+}
+
+.specificationContainer {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  width: 265px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.specGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.specItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14px 36px 14px 12px;
+}
+
+.specLabel {
+  color: #bbc2cb;
+  font-size: 8px;
+}
+
+.specValue {
+  color: #787a7f;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.specGroup:nth-child(2) .specItem:first-child .specLabel {
+  color: #b6bdc7;
+  font-size: 8px;
+}
+
+.specGroup:nth-child(2) .specItem:first-child .specValue {
+  color: #828488;
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.specGroup:nth-child(2) .specItem:last-child .specLabel {
+  color: #bac1ca;
+  align-self: stretch;
+  margin-top: 26px;
+  font-size: 10px;
+}
+
+.specGroup:nth-child(2) .specItem:last-child .specValue {
+  color: #7e8085;
+  margin-top: 13px;
+  font-size: 11px;
+}
+
+@media (width <= 991px) {
+  .vehicleHeader {
+    white-space: initial;
+    margin-left: 2px;
+    padding-right: 20px;
+  }
+
+  .vehicleBrand {
+    white-space: initial;
+  }
+
+  .ratingContainer {
+    white-space: initial;
+  }
+
+  .specItem {
+    padding-right: 20px;
+  }
+}

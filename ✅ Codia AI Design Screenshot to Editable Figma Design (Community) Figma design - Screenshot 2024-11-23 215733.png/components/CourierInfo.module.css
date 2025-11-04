@@ -1,0 +1,104 @@
+.courierWrapper {
+  flex-grow: 1;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .courierWrapper {
+    margin-top: 20px;
+  }
+}
+
+.mapContainer {
+  width: 100%;
+}
+
+.mapImage {
+  aspect-ratio: 1.22;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.courierInfoWrapper {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 12px;
+  padding: 1px 2px;
+  display: flex;
+}
+
+.courierInfoBackground {
+  background-color: #1f1f1f;
+  border-radius: 16px;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  padding: 12px;
+  display: flex;
+}
+
+.courierDetails {
+  align-items: stretch;
+  gap: 10px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+}
+
+.courierAvatar {
+  aspect-ratio: 1.03;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 6px;
+  flex-shrink: 0;
+  width: 36px;
+}
+
+.courierData {
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.courierLabel {
+  color: #545454;
+  align-self: start;
+  font-size: 8px;
+  margin: 0;
+}
+
+.courierName {
+  color: #898989;
+  margin-top: 11px;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.contactButtons {
+  align-items: stretch;
+  gap: 3px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.contactButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.contactIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 29px;
+}

@@ -1,0 +1,163 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Inter, sans-serif;
+}
+@media (width<=640px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+.taskSection {
+  margin-bottom: 20px;
+}
+
+.sectionHeader {
+  background-color: #f5f7fb;
+  border: 3px solid #fafbfc;
+  border-radius: 16px 9px 3px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.headerLeft {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.sectionTitle {
+  color: #676775;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.countBadge {
+  color: #7973c7;
+  background-color: #e7e9f6;
+  border: 1px solid #ebebf3;
+  border-radius: 2px;
+  padding: 2px 6px;
+  font-size: 8px;
+}
+
+.sectionContent {
+  background-color: #fefefe;
+  padding: 10px;
+}
+
+.tableHeader {
+  color: #a0a0a9;
+  grid-template-columns: 40px 200px 1fr 200px 120px 120px 120px 40px;
+  gap: 10px;
+  padding: 10px;
+  font-size: 12px;
+  display: grid;
+}
+@media (width<=991px) {
+  .tableHeader {
+    grid-template-columns: 40px 150px 1fr 150px 100px 100px 100px 40px;
+    font-size: 11px;
+  }
+}
+@media (width<=640px) {
+  .tableHeader {
+    display: none;
+  }
+}
+
+.checkboxCell {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+@media (width<=640px) {
+  .checkboxCell {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.headerCell {
+  color: #6d6d7a;
+  font-size: 12px;
+}
+@media (width<=640px) {
+  .headerCell + .headerCell {
+    margin-top: 5px;
+  }
+}
+
+.dateCell {
+  color: #6c6c79;
+  font-size: 12px;
+}
+@media (width<=640px) {
+  .dateCell {
+    margin-top: 5px;
+  }
+}
+
+.taskRow {
+  border-bottom: 1px solid #f0f0f0;
+  grid-template-columns: 40px 200px 1fr 200px 120px 120px 120px 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  display: grid;
+  position: relative;
+}
+@media (width<=991px) {
+  .taskRow {
+    grid-template-columns: 40px 150px 1fr 150px 100px 100px 100px 40px;
+    font-size: 11px;
+  }
+}
+@media (width<=640px) {
+  .taskRow {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 15px 10px;
+  }
+}
+
+.typeCell {
+  border-radius: 3px;
+  padding: 4px 12px;
+  font-size: 11px;
+}
+@media (width<=640px) {
+  .typeCell,
+  .peopleCell {
+    margin-top: 5px;
+  }
+}
+
+.peopleContainer {
+  gap: 4px;
+  display: flex;
+}
+
+.personBadge {
+  color: #fff;
+  background-color: #9899a3;
+  border-radius: 2px;
+  padding: 2px 6px;
+  font-size: 8px;
+}
+
+.priorityCell {
+  border-radius: 3px;
+  padding: 4px 12px;
+  font-size: 11px;
+}
+@media (width<=640px) {
+  .priorityCell {
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,243 @@
+.header {
+  background-color: transparent;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  padding: 16px 21px;
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+@media (width <= 991px) {
+  .header {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+}
+
+.logoGroup {
+  align-items: stretch;
+  gap: 40px 59px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .logoGroup {
+    max-width: 100%;
+  }
+}
+
+.logo {
+  aspect-ratio: 0.96;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 27px;
+}
+
+.logoText {
+  color: #7e7c7b;
+  white-space: nowrap;
+  align-items: stretch;
+  gap: 28px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 10px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .logoText {
+    white-space: initial;
+  }
+}
+
+.searchContainer {
+  color: #ccc;
+  background-color: transparent;
+  flex-direction: column;
+  flex: 1 0 0;
+  justify-content: center;
+  align-items: stretch;
+  width: fit-content;
+  padding: 3px 4px;
+  font-size: 8px;
+  display: flex;
+}
+
+.searchBackground {
+  background-color: #fdfefe;
+  border-radius: 7px;
+  align-items: stretch;
+  gap: 6px;
+  padding: 8px 6px;
+  display: flex;
+}
+
+.searchIcon {
+  aspect-ratio: 1.1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 11px;
+}
+
+.searchPlaceholder {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 231px;
+}
+
+.userControls {
+  align-self: start;
+  align-items: stretch;
+  gap: 8px;
+  display: flex;
+}
+
+.notificationContainer {
+  aspect-ratio: 1.759;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  padding: 3px 3px 3px 8px;
+  display: flex;
+  position: relative;
+}
+
+.notificationBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.notificationIcon {
+  aspect-ratio: 1.38;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 11px;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 1;
+}
+
+.notificationImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px 10px 5px 6px;
+  flex-shrink: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.userAvatar {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 27px;
+}
+
+/* Secondary Header Styles */
+.secondaryHeader {
+  background-color: transparent;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  padding: 9px 26px;
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+@media (width <= 991px) {
+  .secondaryHeader {
+    max-width: 100%;
+    margin-right: -2px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.userGroup {
+  align-items: stretch;
+  gap: 4px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  display: flex;
+}
+
+.menuIcon {
+  aspect-ratio: 0.96;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 22px;
+}
+
+.userButton {
+  color: #a2a2a2;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px 2px;
+  font-size: 9px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.userButtonBackground {
+  background-color: #fefefe;
+  border: 2px solid #f4f4f4;
+  border-radius: 10px;
+  align-items: stretch;
+  gap: 3px;
+  padding: 4px 3px;
+  display: flex;
+}
+
+.userAvatar {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 15px;
+}
+
+.userName {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.actionGroup {
+  align-self: start;
+  align-items: stretch;
+  gap: 7px;
+  display: flex;
+}
+
+.actionIcon {
+  aspect-ratio: 1.11;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}

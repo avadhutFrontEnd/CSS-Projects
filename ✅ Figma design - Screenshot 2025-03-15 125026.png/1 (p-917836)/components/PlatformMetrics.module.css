@@ -1,0 +1,1050 @@
+.platformMetrics {
+  width: 100%;
+  margin-top: 11px;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .platformMetrics {
+    margin-top: 19px;
+  }
+}
+
+.metricsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metricsRow {
+  align-items: stretch;
+  gap: 3px;
+  display: flex;
+}
+
+.metricsCard {
+  white-space: nowrap;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  width: 171px;
+  height: 171px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricsCard {
+    white-space: initial;
+  }
+}
+
+.cardBackground {
+  background-color: #f0f0f0fe;
+  border: 1px solid #f5f5f5;
+  border-radius: 16px 9px 6px 10px;
+  width: 171px;
+  height: 171px;
+  padding: 9px;
+}
+
+@media (width <= 991px) {
+  .cardBackground {
+    white-space: initial;
+  }
+}
+
+.cardHeader {
+  color: #9b9b9b;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  font-size: 8px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .cardHeader {
+    white-space: initial;
+  }
+}
+
+.headerIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 11px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.filterButton {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .filterButton {
+    white-space: initial;
+  }
+}
+
+.filterBackground {
+  background-color: #efefef;
+  border: 2px solid #eaeaea;
+  border-radius: 9px;
+  align-items: stretch;
+  gap: 9px;
+  padding: 8px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .filterBackground {
+    white-space: initial;
+  }
+}
+
+.filterIcon {
+  aspect-ratio: 1.14;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 8px;
+}
+
+.platformList {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 8px;
+  padding: 1px;
+  font-size: 8px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .platformList {
+    white-space: initial;
+  }
+}
+
+.platformBackground {
+  background-color: #fefefe;
+  border-radius: 4px;
+  align-items: stretch;
+  gap: 19px;
+  padding: 7px;
+  display: flex;
+  margin-bottom: 4px;
+}
+
+@media (width <= 991px) {
+  .platformBackground {
+    white-space: initial;
+  }
+}
+
+.platformItem {
+  color: #cecece;
+  flex: 1;
+  align-self: start;
+  align-items: stretch;
+  gap: 4px;
+  font-weight: 600;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .platformItem {
+    white-space: initial;
+  }
+}
+
+.platformIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+.platformName {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.platformValue {
+  color: #9b9b9b;
+  flex: 1;
+  align-items: stretch;
+  gap: 7px;
+  font-weight: 400;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .platformValue {
+    white-space: initial;
+  }
+}
+
+.valueAmount {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.valueChart {
+  aspect-ratio: 1.63;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 26px;
+}
+
+.dealsCard {
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  width: 173px;
+  height: 173px;
+  display: flex;
+}
+
+.dealsBackground {
+  background-color: #efefeffe;
+  border: 1px solid #f8f7f8;
+  border-radius: 19px 16px 9px 10px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 173px;
+  height: 173px;
+  padding: 9px 11px;
+  display: flex;
+}
+
+.dealsHeader {
+  color: #a4a4a4;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .dealsHeader {
+    white-space: initial;
+  }
+}
+
+.chartContainer {
+  align-items: stretch;
+  gap: 2px;
+  margin-top: 19px;
+  display: flex;
+}
+
+.chartGroup {
+  aspect-ratio: 1.754;
+  flex-direction: column;
+  align-self: start;
+  align-items: flex-start;
+  gap: 2px;
+  width: 121px;
+  margin-top: 14px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  display: flex;
+  position: relative;
+}
+
+.chartBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.chartLabel {
+  z-index: 10;
+  aspect-ratio: 0.933;
+  color: #7695e6;
+  white-space: nowrap;
+  text-align: center;
+  flex-direction: column;
+  align-self: start;
+  width: 28px;
+  padding: 9px 10px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .chartLabel {
+    white-space: initial;
+  }
+}
+
+.chartBar {
+  position: relative;
+}
+
+.chartBar:nth-child(3) {
+  background-color: #fefefefe;
+  border: 1px solid #f3f3f3;
+  border-radius: 7px 0 3px 7px;
+  flex-direction: column;
+  align-self: end;
+  align-items: center;
+  margin-top: -25px;
+  padding: 9px 6px 71px;
+  display: flex;
+  position: relative;
+}
+
+.chartBar:nth-child(4) {
+  background-color: #fefefe;
+  border: 1px solid #fafafa;
+  border-radius: 6px;
+  align-self: start;
+  margin-top: 14px;
+  padding: 9px 6px 32px;
+  position: relative;
+}
+
+.chartBar:nth-child(5) {
+  background-color: #fefdfd;
+  border-radius: 8px;
+  align-self: end;
+  margin-top: 29px;
+  padding: 8px 6px 18px;
+  position: relative;
+}
+
+.barIcon {
+  aspect-ratio: 0.92;
+  object-fit: contain;
+  object-position: center;
+  width: 12px;
+}
+
+.chartBar:nth-child(4) .barIcon {
+  aspect-ratio: 0.92;
+  object-fit: contain;
+  object-position: center;
+  width: 11px;
+}
+
+.chartBar:nth-child(5) .barIcon {
+  aspect-ratio: 1.08;
+  object-fit: contain;
+  object-position: center;
+  width: 13px;
+}
+
+.chartLegend {
+  aspect-ratio: 0.366;
+  border-radius: 9px;
+  flex-direction: column;
+  width: 30px;
+  padding: 9px 6px 61px;
+  display: flex;
+  position: relative;
+}
+
+.legendBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.legendIcon {
+  aspect-ratio: 0.92;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.dealsTitle {
+  color: #bbb;
+  align-self: start;
+  margin-top: 5px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.dealsSubtitle {
+  color: #989898;
+  align-self: start;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.platformValueCard {
+  background-color: transparent;
+  width: 100%;
+  margin-top: 4px;
+  padding-bottom: 15px;
+}
+
+.valueBackground {
+  background-color: #f1f1f1;
+  border: 1px solid #f8f8f8;
+  border-radius: 16px;
+  align-items: stretch;
+  gap: 6px;
+  padding-top: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+}
+
+.valueHeader {
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.valueHeaderGroup {
+  align-items: start;
+  gap: 6px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .valueHeaderGroup {
+    margin-left: 9px;
+  }
+}
+
+.valueHeaderIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.valueHeaderContent {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.valueHeaderTitle {
+  color: #bfbfbf;
+  font-size: 9px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.valueHeaderSubtitle {
+  color: #8c8c8c;
+  align-self: start;
+  font-size: 8px;
+  margin: 0;
+}
+
+.valueMetrics {
+  white-space: nowrap;
+  background-color: #d72e59;
+  border: 1px solid #d75677;
+  border-radius: 0 7px 0 16px;
+  align-items: start;
+  gap: 13px;
+  margin-top: 10px;
+  padding: 13px 15px 25px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .valueMetrics {
+    white-space: initial;
+  }
+}
+
+.metricsIcon {
+  aspect-ratio: 0.12;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 8px;
+  margin-top: 12px;
+}
+
+.metricsContent {
+  flex-direction: column;
+  align-items: start;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricsContent {
+    white-space: initial;
+  }
+}
+
+.metricsTitle {
+  color: #e15d7e;
+  font-size: 6px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.metricsValue {
+  color: #e291a8;
+  margin-top: 4px;
+  font-size: 8px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.metricsLabel {
+  color: #e25c7e;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 6px;
+  font-weight: 300;
+  display: block;
+}
+
+.metricsRow {
+  align-self: stretch;
+  align-items: stretch;
+  gap: 2px;
+  font-weight: 400;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricsRow {
+    white-space: initial;
+  }
+}
+
+.metricsCount {
+  color: #e395ac;
+  text-align: center;
+  flex-grow: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 8px;
+}
+
+.metricsRatio {
+  color: #e15c7d;
+  font-size: 9px;
+}
+
+.metricsLabel:nth-of-type(2) {
+  color: #e15a7c;
+  margin-top: 10px;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.metricsRow:nth-of-type(2) {
+  align-self: stretch;
+  align-items: stretch;
+  gap: 3px;
+  font-size: 8px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricsRow:nth-of-type(2) {
+    white-space: initial;
+    margin-right: 4px;
+  }
+}
+
+.metricsPercentage {
+  color: #de8ea6;
+  text-align: center;
+  flex-grow: 1;
+  font-weight: 600;
+}
+
+.metricsRatio:nth-of-type(2) {
+  color: #e25d7f;
+  font-weight: 400;
+}
+
+.valueControls {
+  flex-direction: column;
+  align-self: start;
+  align-items: stretch;
+  display: flex;
+}
+
+.controlsGroup {
+  white-space: nowrap;
+  align-self: end;
+  align-items: start;
+  width: 127px;
+  max-width: 100%;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .controlsGroup {
+    white-space: initial;
+    margin-right: 5px;
+  }
+}
+
+.controlButton {
+  color: #797979;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: stretch;
+  padding: 2px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .controlButton {
+    white-space: initial;
+  }
+}
+
+.controlDarkBackground {
+  background-color: #101110;
+  border: 1px solid #2f2f2f;
+  border-radius: 7px;
+  padding: 7px;
+}
+
+@media (width <= 991px) {
+  .controlDarkBackground {
+    white-space: initial;
+  }
+}
+
+.controlLightBackground {
+  background-color: #eff0ef;
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+
+@media (width <= 991px) {
+  .controlLightBackground {
+    white-space: initial;
+  }
+}
+
+.controlButton:nth-child(3) .controlLightBackground {
+  background-color: #eff0f0;
+  border: 3px solid #f6f7f7;
+  border-radius: 7px 6px 3px 7px;
+  padding: 6px 8px;
+}
+
+@media (width <= 991px) {
+  .controlButton:nth-child(3) .controlLightBackground {
+    white-space: initial;
+  }
+}
+
+.chartContainer {
+  white-space: nowrap;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .chartContainer {
+    white-space: initial;
+  }
+}
+
+.chartLine {
+  aspect-ratio: 111.11;
+  object-fit: contain;
+  object-position: center;
+  width: 217px;
+}
+
+@media (width <= 991px) {
+  .chartLine {
+    margin-right: 2px;
+  }
+}
+
+.chartValues {
+  align-self: end;
+  align-items: stretch;
+  gap: 40px 99px;
+  width: 159px;
+  max-width: 100%;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .chartValues {
+    white-space: initial;
+  }
+}
+
+.valueButton {
+  color: #df86a0;
+  background-color: transparent;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px 2px;
+  font-size: 7px;
+  font-weight: 600;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .valueButton {
+    white-space: initial;
+  }
+}
+
+.valueButtonBackground {
+  background-color: #d6315b;
+  border: 1px solid #d76784;
+  border-radius: 2px;
+  padding: 4px 2px;
+}
+
+@media (width <= 991px) {
+  .valueButtonBackground {
+    white-space: initial;
+  }
+}
+
+.valueAmount {
+  color: #d2d2d2;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 6px;
+  font-weight: 300;
+}
+
+.chartDetailContainer {
+  aspect-ratio: 3.013;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  position: relative;
+}
+
+.chartDetailBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.chartDetails {
+  z-index: 10;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 7px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .chartDetails {
+    white-space: initial;
+    margin-right: 2px;
+  }
+}
+
+.detailButton {
+  color: #e08fa7;
+  text-align: center;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 14px;
+  padding: 1px 2px;
+  font-weight: 600;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .detailButton {
+    white-space: initial;
+  }
+}
+
+.detailButtonBackground {
+  background-color: #d6325b;
+  border: 1px solid #d66884;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+@media (width <= 991px) {
+  .detailButtonBackground {
+    white-space: initial;
+  }
+}
+
+.detailValues {
+  align-items: stretch;
+  gap: 40px 41px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .detailValues {
+    white-space: initial;
+  }
+}
+
+.detailValues .valueButton {
+  color: #de87a0;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2px;
+  font-weight: 600;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .detailValues .valueButton {
+    white-space: initial;
+  }
+}
+
+.detailValues .valueButtonBackground {
+  background-color: #d62f5a;
+  border: 1px solid #dd7a94;
+  border-radius: 2px;
+  padding: 4px 3px;
+}
+
+@media (width <= 991px) {
+  .detailValues .valueButtonBackground {
+    white-space: initial;
+  }
+}
+
+.detailValues .valueAmount {
+  color: #d7d7d7;
+  font-weight: 400;
+}
+
+.chartLabels {
+  white-space: nowrap;
+  flex-direction: column;
+  align-self: end;
+  align-items: stretch;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .chartLabels {
+    white-space: initial;
+  }
+}
+
+.labelAmount {
+  color: #d8d8d8;
+  align-self: start;
+  font-size: 6px;
+  font-weight: 300;
+}
+
+.labelAmount:nth-child(2) {
+  color: #d5d6d5;
+  margin-top: 16px;
+  font-size: 7px;
+  font-weight: 500;
+}
+
+.chartMarkers {
+  align-self: start;
+  align-items: start;
+  gap: 6px;
+  margin-left: 13px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .chartMarkers {
+    margin-left: 10px;
+  }
+}
+
+.markerIcon {
+  aspect-ratio: 1.11;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 10px;
+  margin-top: 11px;
+}
+
+.markerIcon:nth-child(2) {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 9px;
+  margin-top: 11px;
+}
+
+.markerIcon:nth-child(3) {
+  aspect-ratio: 0.95;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 18px;
+}
+
+.markerIcon:nth-child(4) {
+  aspect-ratio: 0.9;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 9px;
+  margin-top: 10px;
+}
+
+.markerIcon:nth-child(5) {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 10px;
+  margin-top: 10px;
+}
+
+.markerIcon:nth-child(6) {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 9px;
+  margin-top: 10px;
+}
+
+.markerIcon:nth-child(7) {
+  aspect-ratio: 0.9;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 9px;
+  margin-top: 10px;
+}
+
+.markerIcon:nth-child(8) {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 10px;
+  margin-top: 10px;
+}
+
+.markerIcon:nth-child(9) {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 9px;
+  margin-top: 10px;
+}
+
+.timeLabels {
+  white-space: nowrap;
+  text-align: center;
+  justify-content: space-between;
+  align-self: center;
+  align-items: stretch;
+  gap: 20px;
+  width: 136px;
+  max-width: 100%;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 6px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .timeLabels {
+    white-space: initial;
+  }
+}
+
+.timeLabel {
+  color: #d7d7d7;
+  font-weight: 600;
+}
+
+.timeLabel:nth-child(2) {
+  color: #dadada;
+  font-weight: 400;
+}
+
+.timeLabel:nth-child(3) {
+  color: #d6d6d6;
+  font-weight: 300;
+}

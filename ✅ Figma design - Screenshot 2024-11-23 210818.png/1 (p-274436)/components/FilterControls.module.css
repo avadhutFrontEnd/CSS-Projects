@@ -1,0 +1,119 @@
+.filterControlsContainer {
+  background-color: transparent;
+  align-items: stretch;
+  gap: 3px;
+  margin-top: 15px;
+  margin-right: 11px;
+  padding: 6px 4px 6px 10px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.showMeSection {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.sectionTitle {
+  color: #8a8a8a;
+  align-self: start;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.filterButton {
+  color: #929292;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 9px;
+  padding: 3px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonBackground {
+  background-color: #1a1a1a;
+  border: 1px solid #7a7b79;
+  border-radius: 8px;
+  padding: 12px 17px;
+}
+
+.sortBySection {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.sortButtonsContainer {
+  white-space: nowrap;
+  align-items: stretch;
+  gap: 3px;
+  margin-top: 6px;
+  display: flex;
+}
+
+.sortButton {
+  color: #8e8e8e;
+  background-color: transparent;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+  padding: 3px 4px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.filterButtonBackground {
+  background-color: #1a1a1b;
+  border: 1px solid #747472;
+  border-radius: 8px;
+  align-items: stretch;
+  gap: 7px;
+  padding: 11px 13px;
+  display: flex;
+}
+
+.filterIcon {
+  aspect-ratio: 1.08;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+@media (width <= 991px) {
+  .filterControlsContainer {
+    margin-left: 8px;
+    margin-right: 10px;
+  }
+
+  .buttonBackground {
+    padding-right: 20px;
+  }
+
+  .sortButtonsContainer {
+    white-space: initial;
+  }
+
+  .sortButton {
+    white-space: initial;
+  }
+
+  .buttonBackground {
+    white-space: initial;
+    padding-right: 20px;
+  }
+
+  .filterButtonBackground {
+    white-space: initial;
+  }
+}

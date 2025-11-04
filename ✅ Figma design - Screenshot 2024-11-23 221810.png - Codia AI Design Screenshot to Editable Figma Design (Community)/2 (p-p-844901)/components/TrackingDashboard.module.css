@@ -1,0 +1,29 @@
+.dashboardContainer {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  font-family: Inter, sans-serif;
+  display: flex;
+}
+
+.contentArea {
+  background-color: #fff;
+  flex: 1;
+  padding: 38px 35px;
+}
+
+.orderCardsSection {
+  margin-bottom: 30px;
+}
+
+@media (width<=991px) {
+  .contentArea {
+    padding: 20px;
+  }
+}
+
+@media (width<=640px) {
+  .contentArea {
+    padding: 15px;
+  }
+}

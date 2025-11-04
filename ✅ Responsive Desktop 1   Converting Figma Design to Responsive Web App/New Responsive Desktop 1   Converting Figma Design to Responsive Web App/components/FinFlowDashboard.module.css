@@ -1,0 +1,450 @@
+.dashboard {
+  background-color: #1a1a1d;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #161619;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+  padding: 20px;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .sidebar {
+    width: 60px;
+    padding: 10px;
+  }
+}
+
+.logoContainer {
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+  display: flex;
+}
+
+.logoIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.logoText {
+  color: #c5bebd;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.navItem {
+  color: #aca1a0;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.navIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.notificationBadge {
+  color: #fff;
+  background-color: #fa3a5c;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+  position: absolute;
+  right: 20px;
+}
+
+.addNewButton {
+  color: #f5aab7;
+  background-color: #fa3a5c;
+  border-radius: 7px;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.addIcon {
+  width: 11px;
+  height: 11px;
+}
+
+.sectionTitle {
+  color: #7d7371;
+  padding: 10px 23px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.userProfile {
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  display: flex;
+}
+
+.profileImg {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.userInfo {
+  flex-direction: column;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .userInfo {
+    display: none;
+  }
+}
+
+.userName {
+  color: #aba29f;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.userRole {
+  color: #7d7571;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Main Content Styles */
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (width<=640px) {
+  .mainContent {
+    padding: 10px;
+  }
+}
+
+.contentHeader {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .contentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+.titleContainer {
+  color: #b9b9b9;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+}
+
+.title {
+  color: #b9b9b9;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.badge {
+  color: #b9b9b9;
+  background-color: #232327;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 14px;
+}
+
+.searchContainer {
+  width: 240px;
+  position: relative;
+}
+
+@media (width<=640px) {
+  .searchContainer {
+    width: 100%;
+  }
+}
+
+.searchInput {
+  color: #505053;
+  background-color: #1b1b1e;
+  border: 1px solid #262736;
+  border-radius: 9px;
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  font-size: 12px;
+}
+
+.searchIcon {
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.actionButtons {
+  gap: 15px;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .actionButtons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (width<=640px) {
+  .actionButtons {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.secondaryButton {
+  color: #969697;
+  background-color: #1a1a1d;
+  border: 1px solid #283042;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+}
+
+.buttonIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.primaryButton {
+  color: #f5a3b2;
+  background-color: #f9395b;
+  border: 1px solid #7f293a;
+  border-radius: 9px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+}
+
+/* Status Cards */
+.statusCardsContainer {
+  gap: 20px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .statusCardsContainer {
+    flex-wrap: wrap;
+  }
+}
+
+.statusCard {
+  background-color: #161619;
+  border-radius: 9px;
+  align-items: center;
+  gap: 15px;
+  min-width: 200px;
+  padding: 15px;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .statusCard {
+    min-width: 45%;
+  }
+}
+
+.statusIcon {
+  width: 18px;
+  height: 19px;
+}
+
+.statusInfo {
+  flex-direction: column;
+  display: flex;
+}
+
+.statusTitle {
+  color: #aaaaab;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.statusAmount {
+  color: #8a8a8b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Transaction Grid */
+.transactionGrid {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  display: grid;
+}
+
+@media (width<=991px) {
+  .transactionGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (width<=640px) {
+  .transactionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Transaction Card */
+.transactionCard {
+  background-color: #232327;
+  border: 1px solid #1c1c1f;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cardHeader {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.vendorName {
+  color: #9e9ea0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.vendorIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.textLogo {
+  color: #232327;
+  text-align: center;
+  background-color: #858586;
+  border-radius: 2px;
+  padding: 2px 5px;
+  font-size: 7px;
+}
+
+.transactionAmount {
+  color: #b0b0b1;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.transactionFrequency {
+  color: #8e8e90;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.transactionDescription {
+  color: #606062;
+  margin-bottom: 15px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.userInfo {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.userAvatar {
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+
+.userName {
+  color: #868688;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.transactionDate {
+  color: #858587;
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Premium Card */
+.premiumCard {
+  background-color: #232327;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.premiumTitle {
+  color: #f5b2ba;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.premiumDescription {
+  color: #f5a3a5;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.premiumButton {
+  color: #929292;
+  background-color: #0b0c0c;
+  border: 1px solid #6c2e26;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}

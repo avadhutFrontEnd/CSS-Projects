@@ -1,0 +1,450 @@
+.platformStats {
+  flex-direction: column;
+  align-items: stretch;
+  width: 75%;
+  margin-left: 20px;
+  line-height: normal;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .platformStats {
+    width: 100%;
+  }
+}
+
+.platformContainer {
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .platformContainer {
+    max-width: 100%;
+  }
+}
+
+.timeframeContainer {
+  align-self: end;
+  align-items: stretch;
+  gap: 12px;
+  width: 193px;
+  max-width: 100%;
+  display: flex;
+}
+
+.timeframeLabel {
+  color: #a4a4a4;
+  white-space: nowrap;
+  align-items: stretch;
+  gap: 3px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 8px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .timeframeLabel {
+    white-space: initial;
+  }
+}
+
+.timeframeIcon {
+  aspect-ratio: 1.62;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 21px;
+}
+
+.timeframeText {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.timeframeButton {
+  color: #a6a6a6;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px 3px;
+  font-size: 9px;
+  font-weight: 400;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.timeframeBackground {
+  background-color: #eff0ef;
+  border: 1px solid #f8f7f8;
+  border-radius: 10px;
+  padding: 7px 9px;
+}
+
+@media (width <= 991px) {
+  .timeframeBackground {
+    padding-right: 20px;
+  }
+}
+
+.statsGrid {
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 40px 49px;
+  width: 100%;
+  margin-top: 23px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .statsGrid {
+    max-width: 100%;
+  }
+}
+
+.amountButton {
+  color: #e07c98;
+  white-space: nowrap;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 1px 2px;
+  font-size: 8px;
+  font-weight: 600;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .amountButton {
+    white-space: initial;
+  }
+}
+
+.amountBackground {
+  background-color: #d62e59;
+  border: 1px solid #d86081;
+  border-radius: 7px;
+  padding: 5px 4px;
+}
+
+@media (width <= 991px) {
+  .amountBackground {
+    white-space: initial;
+  }
+}
+
+.statsRow {
+  flex: auto;
+  align-items: stretch;
+  gap: 13px;
+  display: flex;
+}
+
+.statsGroup {
+  align-items: stretch;
+  gap: 6px;
+  font-weight: 400;
+  display: flex;
+}
+
+.statsCard {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px;
+  font-size: 8px;
+  display: flex;
+}
+
+.cardBackground {
+  background-color: #fefefe;
+  border: 2px solid #ebebeb;
+  border-radius: 8px 9px 6px 12px;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  padding: 9px;
+  display: flex;
+}
+
+.cardContent {
+  flex-direction: column;
+  align-items: start;
+  display: flex;
+}
+
+.cardTitle {
+  color: #ccc;
+  margin: 0;
+  font-weight: 400;
+  font-size: 8px;
+}
+
+.cardValue {
+  color: #787878;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.cardUser {
+  color: #a9a9a9;
+  white-space: nowrap;
+  align-self: stretch;
+  align-items: stretch;
+  gap: 1px;
+  margin-top: 9px;
+  font-weight: 500;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .cardUser {
+    white-space: initial;
+  }
+}
+
+.userIcon {
+  aspect-ratio: 1.08;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+.userName {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cardAction {
+  aspect-ratio: 0.86;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: end;
+  width: 12px;
+  margin-top: 32px;
+}
+
+.dealCard {
+  aspect-ratio: 1.603;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 109px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  display: flex;
+  position: relative;
+}
+
+.dealBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.dealContent {
+  background-color: transparent;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.dealHeader {
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .dealHeader {
+    margin-right: 3px;
+  }
+}
+
+.dealTitle {
+  color: #444;
+  font-size: 8px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.dealStar {
+  color: #5b5b5b;
+  text-align: center;
+  font-size: 9px;
+}
+
+.dealAmount {
+  color: #a1a1a1;
+  align-self: start;
+  margin-top: 9px;
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.dealCompany {
+  color: #757575;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: 7px;
+  font-size: 9px;
+  font-weight: 300;
+  display: flex;
+}
+
+.companyIcon {
+  aspect-ratio: 1.08;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+.metricsGroup {
+  align-self: start;
+  align-items: stretch;
+  gap: 6px;
+  display: flex;
+}
+
+.metricCard {
+  white-space: nowrap;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricCard {
+    white-space: initial;
+  }
+}
+
+.metricBackground {
+  background-color: #fefefe;
+  border: 1px solid #dedddf;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 8px 12px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricBackground {
+    white-space: initial;
+  }
+}
+
+.metricBackgroundHighlight {
+  background-color: #fefdfe;
+  border: 1px solid #e590a6;
+  border-radius: 7px;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px 12px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricBackgroundHighlight {
+    white-space: initial;
+  }
+}
+
+.metricTitle {
+  color: #a3a3a3;
+  font-size: 9px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (width <= 991px) {
+  .metricTitle {
+    margin-left: 3px;
+    margin-right: 4px;
+  }
+}
+
+.metricChart {
+  aspect-ratio: 1.61;
+  object-fit: contain;
+  object-position: center;
+  width: 29px;
+  margin-top: 4px;
+}
+
+.metricValue {
+  color: #949393;
+  text-align: center;
+  align-self: center;
+  margin-top: 5px;
+  font-size: 8px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.metricBackgroundHighlight .metricTitle {
+  color: #9d9b9c;
+  font-size: 9px;
+}
+
+@media (width <= 991px) {
+  .metricBackgroundHighlight .metricTitle {
+    margin-left: 5px;
+    margin-right: 7px;
+  }
+}
+
+.metricBackgroundHighlight .metricChart {
+  aspect-ratio: 1.83;
+  object-fit: contain;
+  object-position: center;
+  width: 33px;
+  margin-top: 5px;
+}
+
+.metricBackgroundHighlight .metricValue {
+  color: #acabab;
+  text-align: center;
+  align-self: start;
+  margin-top: 6px;
+  margin-left: 13px;
+  font-size: 8px;
+}
+
+@media (width <= 991px) {
+  .metricBackgroundHighlight .metricValue {
+    margin-left: 10px;
+  }
+}

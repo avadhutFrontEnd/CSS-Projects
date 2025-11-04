@@ -1,0 +1,1242 @@
+.salesDynamics {
+  background-color: transparent;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 13px 12px 5px;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .salesDynamics {
+    margin-top: 8px;
+  }
+}
+
+.salesHeader {
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 255px;
+  max-width: 100%;
+  margin-left: 10px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 7px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .salesHeader {
+    white-space: initial;
+  }
+}
+
+.headerLabels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.headerLabel {
+  color: #cdcece;
+  text-align: center;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 500;
+}
+
+.headerLabel:nth-child(2) {
+  color: #cacaca;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.headerLabel:nth-child(3) {
+  color: #ccc;
+  text-align: center;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.headerLabel:nth-child(4) {
+  color: #c9c8c9;
+  text-align: center;
+  align-self: stretch;
+  font-size: 9px;
+}
+
+.headerLabel:nth-child(5) {
+  color: #cecdcd;
+  text-align: center;
+  align-self: stretch;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.userPerformance {
+  background-color: #fefefe;
+  border-radius: 6px 9px 9px 0;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  padding: 6px 35px 6px 5px;
+  display: flex;
+  margin-top: 10px;
+}
+
+@media (width <= 991px) {
+  .userPerformance {
+    margin-left: 4px;
+    padding-right: 20px;
+  }
+}
+
+.userGroup {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.userInfo {
+  color: #ababab;
+  align-self: stretch;
+  align-items: stretch;
+  gap: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  display: flex;
+}
+
+.userAvatar {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 15px;
+}
+
+.userName {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.userValue {
+  color: #a8a8a8;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.userMetrics {
+  align-self: stretch;
+  align-items: stretch;
+  gap: 1px;
+  display: flex;
+}
+
+.metricsChart {
+  aspect-ratio: 1.28;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 23px;
+}
+
+.metricsBar {
+  aspect-ratio: 1.53;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 26px;
+}
+
+.metricsValue {
+  color: #a1a1a1;
+  text-align: center;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.userPercentage {
+  white-space: nowrap;
+  text-align: center;
+  align-self: start;
+  align-items: stretch;
+  gap: 5px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .userPercentage {
+    white-space: initial;
+  }
+}
+
+.percentageValue {
+  color: #afb0af;
+  flex-grow: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 8px;
+}
+
+.userRatio {
+  color: #7e7e7e;
+  align-items: stretch;
+  gap: 1px;
+  font-size: 9px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .userRatio {
+    white-space: initial;
+  }
+}
+
+.ratioContainer {
+  aspect-ratio: 1.4;
+  flex-direction: column;
+  align-self: start;
+  width: 21px;
+  padding: 4px 7px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .ratioContainer {
+    white-space: initial;
+  }
+}
+
+.ratioValue {
+  position: relative;
+}
+
+.ratioIcon {
+  aspect-ratio: 1.29;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.userPerformanceAlt {
+  background-color: #f8f2f3fe;
+  border: 2px solid #f9f6f6;
+  border-radius: 22px 23px 9px 7px;
+  width: 100%;
+  padding: 4px 6px;
+  margin-top: 10px;
+}
+
+.userGroupAlt {
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.userInfoAlt {
+  color: #9a9d9f;
+  align-self: stretch;
+  align-items: stretch;
+  gap: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  display: flex;
+}
+
+.userValueAlt {
+  color: #9c9ea1;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.userMetricsAlt {
+  align-self: stretch;
+  align-items: stretch;
+  gap: 1px;
+  display: flex;
+}
+
+.metricsChartAlt {
+  aspect-ratio: 1.35;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 23px;
+}
+
+.metricsBarAlt {
+  aspect-ratio: 1.39;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 25px;
+}
+
+.metricsValueAlt {
+  color: #959097;
+  text-align: center;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.userPercentageAlt {
+  color: #a09ba2;
+  white-space: nowrap;
+  text-align: center;
+  align-self: start;
+  align-items: stretch;
+  gap: 4px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .userPercentageAlt {
+    white-space: initial;
+  }
+}
+
+.percentageValueAlt {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ratioIconAlt {
+  aspect-ratio: 1.29;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.userRatioAlt {
+  color: #929292;
+  white-space: nowrap;
+  text-align: center;
+  align-self: stretch;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 7px;
+  font-weight: 400;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .userRatioAlt {
+    white-space: initial;
+  }
+}
+
+.ratioValueAlt {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ratioIconSmall {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 15px;
+}
+
+.userControls {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-top: 8px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .userControls {
+    margin-right: 4px;
+  }
+}
+
+.controlsGroup {
+  align-self: start;
+  align-items: stretch;
+  gap: 2px;
+  display: flex;
+}
+
+.controlsContent {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.controlsRow {
+  align-items: stretch;
+  gap: 4px;
+  display: flex;
+}
+
+.controlButton {
+  color: #a3a3a3;
+  background-color: transparent;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px 3px;
+  font-weight: 300;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.controlBackground {
+  background-color: #fefefe;
+  border: 1px solid #f1f3f4;
+  border-radius: 9px;
+  align-items: stretch;
+  gap: 7px;
+  padding: 6px 7px;
+  display: flex;
+}
+
+.controlIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 8px;
+}
+
+.controlButtonAlt {
+  color: #a9a9a9;
+  background-color: transparent;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1px;
+  font-weight: 400;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.controlBackgroundAlt {
+  background-color: #fefefe;
+  border: 1px solid #f0f1f4;
+  border-radius: 10px;
+  align-items: stretch;
+  gap: 9px;
+  padding: 6px 7px;
+  display: flex;
+}
+
+.controlIconAlt {
+  aspect-ratio: 0.87;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 7px;
+}
+
+.controlsLabel {
+  color: #989999;
+  align-self: start;
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+.controlButtonSmall {
+  color: #a8a8a8;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-self: start;
+  align-items: stretch;
+  padding: 1px 2px;
+  font-weight: 300;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.controlBackgroundSmall {
+  background-color: #fefefe;
+  border: 1px solid #f7f4f9;
+  border-radius: 7px 9px 9px 2px;
+  align-items: stretch;
+  gap: 7px;
+  padding: 5px 7px;
+  display: flex;
+}
+
+.controlIconSmall {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 9px;
+}
+
+.valueButton {
+  color: #df819c;
+  white-space: nowrap;
+  align-self: end;
+  align-items: stretch;
+  gap: 2px;
+  margin-top: 28px;
+  font-weight: 600;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .valueButton {
+    white-space: initial;
+  }
+}
+
+.valueIcon {
+  aspect-ratio: 1.56;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 25px;
+}
+
+.valueButtonContainer {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .valueButtonContainer {
+    white-space: initial;
+  }
+}
+
+.valueButtonBackground {
+  background-color: #d72e59;
+  border: 1px solid #df6d8e;
+  border-radius: 7px;
+  padding: 4px;
+}
+
+@media (width <= 991px) {
+  .valueButtonBackground {
+    white-space: initial;
+  }
+}
+
+.platformContainer {
+  white-space: nowrap;
+  align-items: stretch;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  display: flex;
+  margin-top: 10px;
+}
+
+@media (width <= 991px) {
+  .platformContainer {
+    white-space: initial;
+    margin-right: 4px;
+  }
+}
+
+.platformBackground {
+  background-color: #fefdfd;
+  border: 4px solid #faf7f8;
+  border-radius: 21px 19px 9px 6px;
+  flex-direction: column;
+  flex: 1;
+  align-items: start;
+  padding: 13px 32px 5px 10px;
+  font-weight: 400;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .platformBackground {
+    white-space: initial;
+    padding-right: 20px;
+  }
+}
+
+.platformHeader {
+  color: #979797;
+  align-items: stretch;
+  gap: 4px;
+  font-size: 7px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .platformHeader {
+    white-space: initial;
+  }
+}
+
+.platformIcon {
+  aspect-ratio: 0.92;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 12px;
+}
+
+.platformMetrics {
+  align-items: stretch;
+  gap: 8px;
+  margin-top: 41px;
+  font-size: 16px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .platformMetrics {
+    white-space: initial;
+    margin-top: 40px;
+  }
+}
+
+.metricsPercentage {
+  color: #7e7e7e;
+  flex-grow: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.metricsAmount {
+  color: #d6d6d6;
+}
+
+.platformAlternative {
+  flex: 1;
+  align-self: start;
+}
+
+@media (width <= 991px) {
+  .platformAlternative {
+    white-space: initial;
+  }
+}
+
+.alternativeRow {
+  align-items: stretch;
+  gap: 3px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .alternativeRow {
+    white-space: initial;
+  }
+}
+
+.alternativeBackground {
+  background-color: #fefefe;
+  border: 1px solid #fbf8fa;
+  border-radius: 9px 9px 6px 7px;
+  flex-direction: column;
+  flex: 1;
+  align-items: start;
+  padding: 7px 14px 7px 6px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .alternativeBackground {
+    white-space: initial;
+  }
+}
+
+.alternativeHeader {
+  color: #a4a4a4;
+  align-items: stretch;
+  gap: 4px;
+  font-size: 8px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .alternativeHeader {
+    white-space: initial;
+  }
+}
+
+.alternativeIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+.alternativeName {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.alternativeMetrics {
+  align-items: stretch;
+  gap: 9px;
+  margin-top: 27px;
+  font-weight: 400;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .alternativeMetrics {
+    white-space: initial;
+  }
+}
+
+.alternativePercentage {
+  color: #979797;
+  font-size: 8px;
+}
+
+.alternativeAmount {
+  color: #dedede;
+  font-size: 9px;
+}
+
+.alternativeContainer {
+  flex: 1;
+}
+
+@media (width <= 991px) {
+  .alternativeContainer {
+    white-space: initial;
+  }
+}
+
+.alternativeBackgroundAlt {
+  background-color: #faf4f6;
+  border-radius: 11px 11px 10px 13px;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 7px 17px 7px 8px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .alternativeBackgroundAlt {
+    white-space: initial;
+  }
+}
+
+.alternativeHeaderAlt {
+  color: #9a9798;
+  align-items: stretch;
+  gap: 4px;
+  font-size: 7px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .alternativeHeaderAlt {
+    white-space: initial;
+  }
+}
+
+.alternativeIconAlt {
+  aspect-ratio: 0.92;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 11px;
+}
+
+.alternativeMetricsAlt {
+  align-items: stretch;
+  gap: 5px;
+  margin-top: 5px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .alternativeMetricsAlt {
+    white-space: initial;
+  }
+}
+
+.alternativePercentageAlt {
+  color: #9e9b9c;
+  text-align: center;
+  font-size: 6px;
+  font-weight: 400;
+}
+
+.alternativeAmountAlt {
+  color: #dbd4d7;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.alternativeButton {
+  background-color: transparent;
+  width: 100%;
+  font-size: 7px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+@media (width <= 991px) {
+  .alternativeButton {
+    white-space: initial;
+  }
+}
+
+.alternativeButtonBackground {
+  background-color: #fefefe;
+  border: 1px solid #fbf4f6;
+  border-radius: 9px;
+  align-items: start;
+  gap: 4px;
+  padding: 7px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .alternativeButtonBackground {
+    white-space: initial;
+  }
+}
+
+.alternativeButtonIcon {
+  aspect-ratio: 1.63;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+.alternativeButtonPercentage {
+  color: #acacab;
+  text-align: center;
+  font-weight: 400;
+}
+
+.alternativeButtonAmount {
+  color: #dedede;
+  align-self: stretch;
+  font-weight: 500;
+}
+
+.otherBackground {
+  background-color: #fefefe;
+  border: 1px solid #fbf4f4;
+  border-radius: 10px;
+  align-items: stretch;
+  gap: 40px 67px;
+  width: 100%;
+  padding: 6px 11px;
+  display: flex;
+  margin-top: 5px;
+}
+
+@media (width <= 991px) {
+  .otherBackground {
+    white-space: initial;
+  }
+}
+
+.otherHeader {
+  color: #959595;
+  text-align: center;
+  flex: 1;
+  align-items: stretch;
+  gap: 5px;
+  font-size: 8px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .otherHeader {
+    white-space: initial;
+  }
+}
+
+.otherIcon {
+  aspect-ratio: 0.92;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 11px;
+}
+
+.otherMetrics {
+  flex: 1;
+  align-items: stretch;
+  gap: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 400;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .otherMetrics {
+    white-space: initial;
+  }
+}
+
+.otherPercentage {
+  color: #a9a9a9;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 8px;
+}
+
+.otherAmount {
+  color: #e2e2e2;
+  font-size: 7px;
+}
+
+.salesDynamicsContainer {
+  aspect-ratio: 3.988;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 6px 7px;
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+}
+
+.salesDynamicsTitle {
+  color: #989592;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 300;
+  position: relative;
+  margin: 0;
+}
+
+.dynamicsChart {
+  white-space: nowrap;
+  text-align: center;
+  align-items: start;
+  gap: 40px 49px;
+  margin-top: 4px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+@media (width <= 991px) {
+  .dynamicsChart {
+    white-space: initial;
+  }
+}
+
+.chartWeeks {
+  align-self: stretch;
+  align-items: stretch;
+  gap: 40px 45px;
+  font-size: 7px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .chartWeeks {
+    white-space: initial;
+  }
+}
+
+.week {
+  color: #ded9d6;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.week:nth-child(2) {
+  color: #e4dedb;
+  font-weight: 400;
+}
+
+.week:nth-child(3) {
+  color: #e2dcd8;
+  font-weight: 500;
+}
+
+.chartLabel {
+  color: #ded7d2;
+  align-items: stretch;
+  gap: 1px;
+  font-size: 6px;
+  font-weight: 300;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .chartLabel {
+    white-space: initial;
+  }
+}
+
+.labelText {
+  flex-grow: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.labelIcon {
+  aspect-ratio: 0.78;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 7px;
+}
+
+.chartWeeksAlt {
+  align-items: stretch;
+  gap: 40px 55px;
+  font-weight: 400;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .chartWeeksAlt {
+    white-space: initial;
+  }
+}
+
+.weekAlt {
+  color: #ddd3cf;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 6px;
+}
+
+.weekAlt:nth-child(2) {
+  color: #e0d2d1;
+  font-size: 7px;
+}
+
+.chartMarkers {
+  align-self: end;
+  align-items: stretch;
+  gap: 40px 100px;
+  width: 250px;
+  max-width: 100%;
+  margin-top: 37px;
+  display: flex;
+  position: relative;
+}
+
+.markerIcon {
+  aspect-ratio: 1.07;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 15px;
+}
+
+.markerGroup {
+  flex: 1;
+  align-self: start;
+  align-items: stretch;
+  display: flex;
+}
+
+.markerGroupIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+.markerLine {
+  aspect-ratio: 6.99;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 21px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.userPerformanceThird {
+  background-color: #fefefe;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: 4px;
+  padding: 6px 43px 6px 6px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .userPerformanceThird {
+    margin-left: 3px;
+    padding-right: 20px;
+  }
+}
+
+.userGroupThird {
+  align-items: stretch;
+  gap: 21px;
+  display: flex;
+}
+
+.userInfoThird {
+  color: #a5a5a5;
+  align-self: start;
+  align-items: stretch;
+  gap: 4px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 300;
+  display: flex;
+}
+
+.userAvatarThird {
+  aspect-ratio: 1.07;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 16px;
+}
+
+.userValueThird {
+  color: #adadad;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 300;
+}
+
+.userMetricsThird {
+  align-items: stretch;
+  display: flex;
+}
+
+.metricsChartThird {
+  aspect-ratio: 1.57;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 22px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.metricsBarThird {
+  aspect-ratio: 1.35;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 23px;
+}
+
+.metricsValueThird {
+  color: #a0a0a0;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.userPercentageThird {
+  align-items: stretch;
+  gap: 5px;
+  display: flex;
+}
+
+.percentageValueThird {
+  color: #ababab;
+  text-align: center;
+  flex-grow: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.userRatioThird {
+  align-items: stretch;
+  gap: 1px;
+  display: flex;
+}
+
+.ratioIconThird {
+  aspect-ratio: 1.14;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ratioIconSmallThird {
+  aspect-ratio: 1.18;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 20px;
+}

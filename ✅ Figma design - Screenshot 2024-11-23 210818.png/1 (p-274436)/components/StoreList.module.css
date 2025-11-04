@@ -1,0 +1,117 @@
+.storeListColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 29%;
+  margin-left: 0;
+  line-height: normal;
+  display: flex;
+}
+
+.storeListContainer {
+  background-color: transparent;
+  flex-grow: 1;
+  width: 100%;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.headerContainer {
+  aspect-ratio: 0.406;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 8px;
+  display: flex;
+  position: relative;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.appHeader {
+  color: #9f9f9f;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  gap: 20px;
+  width: 302px;
+  max-width: 100%;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.menuIcon {
+  aspect-ratio: 1.2;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logoContainer {
+  align-self: stretch;
+  align-items: stretch;
+  gap: 13px;
+  display: flex;
+}
+
+.appLogo {
+  aspect-ratio: 0.95;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 40px;
+}
+
+.appName {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: #9f9f9f;
+}
+
+.notificationIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.storesList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (width <= 991px) {
+  .storeListColumn {
+    width: 100%;
+  }
+
+  .appHeader {
+    white-space: initial;
+  }
+
+  .logoContainer {
+    white-space: initial;
+  }
+}

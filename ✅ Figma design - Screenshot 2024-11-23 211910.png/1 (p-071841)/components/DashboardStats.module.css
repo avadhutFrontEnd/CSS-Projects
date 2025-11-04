@@ -1,0 +1,40 @@
+.statsCard {
+  background-color: #fff;
+  border-radius: 12px;
+  grid-column: span 3;
+  padding: 20px;
+}
+
+@media (width <= 991px) {
+  .statsCard {
+    grid-column: span 6;
+  }
+}
+
+@media (width <= 640px) {
+  .statsCard {
+    grid-column: span 3;
+  }
+}
+
+.statsValue {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.statsTrend {
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  display: flex;
+}
+
+.statsLabel {
+  color: #999;
+  font-size: 13px;
+  margin: 0;
+}

@@ -1,0 +1,67 @@
+.searchBarContainer {
+  color: #989898;
+  white-space: nowrap;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: stretch;
+  width: 316px;
+  max-width: 100%;
+  margin-top: 21px;
+  padding: 3px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+.searchBarWrapper {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 1px 2px;
+  display: flex;
+}
+
+.searchBackground {
+  background-color: #292929;
+  border: 2px solid #454545;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  padding: 17px 21px;
+  display: flex;
+}
+
+.searchPlaceholder {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.searchIcon {
+  aspect-ratio: 0.93;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+@media (width <= 991px) {
+  .searchBarContainer {
+    white-space: initial;
+  }
+
+  .searchBarWrapper {
+    white-space: initial;
+  }
+
+  .searchBackground {
+    white-space: initial;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+.trackingDashboard {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.container {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.logo {
+  aspect-ratio: 0.14;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 115px;
+  max-width: 100%;
+}

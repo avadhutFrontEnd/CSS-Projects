@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  background: #e9e9f3;
+}
+
+section {
+  width: 86vw;
+  height: fit-content;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+header h4 {
+  font-size: 1.5rem;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+header ul li button {
+  background: white;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+header ul li button:hover {
+  background: black;
+  color: white;
+  cursor: default;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+menu {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+figure {
+  flex: 1 0 17rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: white;
+}
+
+figure div {
+  height: 15rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+figure ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+figure ul li {
+  flex: 1;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 1.3rem;
+}
+
+figcaption {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0.3rem;
+}
+
+figcaption span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding-block: 2rem;
+    width: 94vw;
+
+  }
+  header {
+    gap: 1.5rem;
+  }
+  menu {
+   gap: 2rem;
+  }
+}

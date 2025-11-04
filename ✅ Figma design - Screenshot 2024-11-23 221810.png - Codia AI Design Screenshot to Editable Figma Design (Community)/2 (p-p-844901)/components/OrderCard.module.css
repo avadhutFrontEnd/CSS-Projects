@@ -1,0 +1,59 @@
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.cardHeader {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.orderId {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.statusBadge {
+  border-radius: 6px;
+  padding: 7px 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.menuIcon {
+  width: 4px;
+  height: 17px;
+}
+
+.timelineContainer {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.timelineItem {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  display: flex;
+}
+
+.date {
+  color: #c4cad2;
+  width: 60px;
+}
+
+.status {
+  color: #86888c;
+  flex: 1;
+}
+
+.time {
+  text-align: right;
+  color: #9b9da0;
+  width: 60px;
+}

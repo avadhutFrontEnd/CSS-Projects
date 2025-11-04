@@ -1,0 +1,36 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px 0;
+  display: flex;
+}
+
+.searchBar {
+  color: #999;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.userSection {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  background-color: #eee;
+  width: 1px;
+  height: 20px;
+}

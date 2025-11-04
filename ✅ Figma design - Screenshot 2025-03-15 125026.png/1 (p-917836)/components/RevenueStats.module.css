@@ -1,0 +1,103 @@
+.revenueStats {
+  flex-direction: column;
+  align-items: stretch;
+  width: 25%;
+  margin-left: 0;
+  line-height: normal;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .revenueStats {
+    width: 100%;
+  }
+}
+
+.revenueContainer {
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  margin-top: 8px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .revenueContainer {
+    margin-top: 10px;
+  }
+}
+
+.reportTitle {
+  color: #cecece;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.revenueTitle {
+  color: #818181;
+  margin-top: 18px;
+  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.revenueAmount {
+  white-space: nowrap;
+  align-self: stretch;
+  align-items: stretch;
+  gap: 6px;
+  margin-top: 11px;
+  font-weight: 600;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .revenueAmount {
+    white-space: initial;
+  }
+}
+
+.amountGroup {
+  align-items: stretch;
+  gap: 2px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .amountGroup {
+    white-space: initial;
+  }
+}
+
+.amount {
+  color: #646464;
+  flex-grow: 1;
+  font-size: 21px;
+}
+
+.percentage {
+  color: #ccc;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 23px;
+}
+
+.trendIcon {
+  aspect-ratio: 2.22;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 40px;
+}
+
+.comparisonText {
+  color: #ada7a4;
+  margin-top: 9px;
+  font-size: 9px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,64 @@
+.ratingsCard {
+  background-color: #fff;
+  border-radius: 12px;
+  grid-column: span 4;
+  padding: 20px;
+}
+
+@media (width <= 991px) {
+  .ratingsCard {
+    grid-column: span 6;
+  }
+}
+
+@media (width <= 640px) {
+  .ratingsCard {
+    grid-column: span 3;
+  }
+}
+
+.ratingsTitle {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.legendContainer {
+  margin-bottom: 15px;
+}
+
+.legendItem {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.legendDot {
+  background-color: #ddd;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+}
+
+.ratingValue {
+  color: #333;
+  margin: 20px 0 10px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.ratingLabel {
+  color: #999;
+  font-size: 13px;
+  margin: 0 0 15px;
+}
+
+.chartContainer {
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+}

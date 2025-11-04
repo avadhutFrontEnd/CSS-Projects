@@ -1,0 +1,141 @@
+.taskCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.mainInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.assigneeWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.assigneeBadge {
+  aspect-ratio: 2.353;
+  color: #c8ccd5;
+  text-align: center;
+  width: 40px;
+  padding: 6px 28px;
+  font-size: 7px;
+  font-weight: 300;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dueDate {
+  color: #a5a6ab;
+  font-size: 9px;
+  margin: auto 0;
+}
+
+.progressWrapper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin: auto 0;
+}
+
+.progressBar {
+  aspect-ratio: 15.87;
+  width: 48px;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: auto 0;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #f9a9a6;
+}
+
+.progressText {
+  color: #a8a9ad;
+  text-align: center;
+  font-size: 6px;
+  margin: auto 0;
+}
+
+.actionsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: auto 0;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.actionIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 2px;
+  width: 12px;
+}
+
+.actionDot {
+  aspect-ratio: 0.5;
+  object-fit: contain;
+  width: 5px;
+}
+
+.actionArrow {
+  aspect-ratio: 4.5;
+  object-fit: contain;
+  width: 9px;
+  margin: auto 0;
+}
+
+.taskDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.taskTitle {
+  color: #afb0b4;
+  line-height: 11px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.detailsIcon {
+  aspect-ratio: 1.71;
+  object-fit: contain;
+  width: 29px;
+  margin: auto 0;
+}
+
+.detailsDate {
+  color: #a0a2a6;
+  margin: auto 0;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+@media (width <= 991px) {
+  .assigneeBadge {
+    white-space: initial;
+    padding-left: 20px;
+  }
+}

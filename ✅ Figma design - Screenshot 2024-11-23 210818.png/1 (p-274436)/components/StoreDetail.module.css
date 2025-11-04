@@ -1,0 +1,522 @@
+.storeDetailColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 71%;
+  margin-left: 20px;
+  line-height: normal;
+  display: flex;
+}
+
+.storeDetailContainer {
+  background-color: transparent;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.mapContainer {
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 850px;
+  padding-top: 67px;
+  padding-bottom: 67px;
+  display: flex;
+  position: relative;
+}
+
+.mapImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.mapControls {
+  z-index: 10;
+  color: #848484;
+  white-space: nowrap;
+  text-align: center;
+  align-self: end;
+  width: 62px;
+  margin-right: 182px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  position: relative;
+}
+
+.mapControlIcon {
+  aspect-ratio: 0.98;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 23px;
+  width: 100%;
+}
+
+.mapButton {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 5px;
+  padding: 2px 4px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.mapButtonBackground {
+  background-color: #1a1a1a;
+  border: 1px solid #666;
+  border-radius: 8px;
+  align-items: stretch;
+  gap: 7px;
+  padding: 10px 11px;
+  display: flex;
+}
+
+.mapButtonIcon {
+  aspect-ratio: 0.93;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 14px;
+}
+
+.mapButtonText {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.storeMarkers {
+  flex-direction: column;
+  margin-top: -4px;
+  padding-left: 80px;
+  padding-right: 37px;
+  display: flex;
+  position: relative;
+}
+
+.storeMarker {
+  white-space: nowrap;
+  flex-direction: column;
+  align-items: stretch;
+  width: 67px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+}
+
+.markerContainer {
+  aspect-ratio: 1;
+  color: #595859;
+  border-radius: 23px;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  padding: 24px 8px 15px;
+  display: flex;
+  position: relative;
+}
+
+.markerImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.markerText {
+  position: relative;
+  z-index: 1;
+}
+
+.markerButton {
+  color: #7e7e7e;
+  text-align: center;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 6px;
+  padding: 2px 3px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.markerButtonBackground {
+  background-color: #fefefe;
+  border: 1px solid #9d9d9d;
+  border-radius: 9px;
+  align-items: stretch;
+  gap: 6px;
+  padding: 10px 12px;
+  display: flex;
+}
+
+.markerButtonIcon {
+  aspect-ratio: 0.93;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 14px;
+}
+
+.markerButtonText {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.storeDetailCard {
+  z-index: 10;
+  background-color: transparent;
+  align-self: center;
+  width: 298px;
+  max-width: 100%;
+  margin-top: 20px;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.cardBackground {
+  background-color: #1b1b1b;
+  border: 1px solid #202020;
+  border-radius: 19px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 12px 9px;
+  display: flex;
+}
+
+.cardHeader {
+  align-self: start;
+  align-items: stretch;
+  gap: 19px;
+  display: flex;
+}
+
+.logoContainer {
+  aspect-ratio: 0.979;
+  color: #5a5959;
+  white-space: nowrap;
+  flex-direction: column;
+  width: 47px;
+  padding: 25px 7px 16px;
+  font-size: 9px;
+  display: flex;
+  position: relative;
+}
+
+.storeLogo {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.logoText {
+  position: relative;
+  z-index: 1;
+}
+
+.storeInfo {
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.storeName {
+  color: #a7a7a7;
+  align-self: start;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.storeMetadata {
+  align-items: stretch;
+  gap: 13px;
+  margin-top: 11px;
+  font-size: 9px;
+  display: flex;
+}
+
+.storeDistance {
+  color: gray;
+}
+
+.storeHours {
+  color: #489570;
+}
+
+.storeStats {
+  background-color: #282828;
+  border: 1px solid #666;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: 16px;
+  padding: 9px 38px 9px 11px;
+  font-size: 9px;
+  display: flex;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.statIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 15px;
+}
+
+.statValue {
+  color: #929292;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.statHours {
+  color: #979797;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.statPrice {
+  color: #7f7f7f;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.storeTagline {
+  color: #a0a0a0;
+  align-self: start;
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+.storeDescription {
+  color: #8d8d8d;
+  margin-top: 13px;
+  margin-left: 13px;
+  margin-right: 14px;
+  font-size: 9px;
+  line-height: 13px;
+}
+
+.detailsButton {
+  color: #a1a1a1;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 20px;
+  padding: 4px;
+  font-size: 12px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.detailsButtonBackground {
+  background-color: #262626;
+  border: 1px solid #545454;
+  border-radius: 10px;
+  padding: 19px 70px;
+}
+
+.additionalMarkers {
+  flex-direction: column;
+  align-self: end;
+  align-items: stretch;
+  width: 67px;
+  margin-top: -167px;
+  display: flex;
+}
+
+.additionalMarkerIcon {
+  aspect-ratio: 1.02;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 23px;
+  align-self: center;
+  width: 100%;
+}
+
+.additionalMarkerSubIcon {
+  aspect-ratio: 1.72;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.timberlandMarker {
+  color: #4b3d22;
+  white-space: nowrap;
+  flex-direction: column;
+  align-self: center;
+  align-items: start;
+  width: 365px;
+  max-width: 100%;
+  margin-top: 135px;
+  margin-left: 37px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 6px;
+  font-weight: 600;
+  display: flex;
+}
+
+.timberlandIcon {
+  aspect-ratio: 0.7;
+  object-fit: contain;
+  object-position: center;
+  align-self: end;
+  width: 66px;
+}
+
+.timberlandContainer {
+  aspect-ratio: 1.022;
+  border-radius: 23px;
+  flex-direction: column;
+  margin-top: 11px;
+  padding: 21px 5px;
+  display: flex;
+  position: relative;
+}
+
+.timberlandLogo {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.timberlandText {
+  position: relative;
+  z-index: 1;
+}
+
+.timberlandSubIcon {
+  aspect-ratio: 1.78;
+  object-fit: contain;
+  object-position: center;
+  width: 64px;
+  margin-top: 6px;
+}
+
+@media (width <= 991px) {
+  .storeDetailColumn {
+    width: 100%;
+  }
+
+  .mapContainer {
+    max-width: 100%;
+  }
+
+  .mapControls {
+    white-space: initial;
+    margin-right: 10px;
+  }
+
+  .mapButton {
+    white-space: initial;
+  }
+
+  .mapButtonBackground {
+    white-space: initial;
+  }
+
+  .storeMarkers {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .storeMarker {
+    white-space: initial;
+  }
+
+  .markerContainer {
+    white-space: initial;
+  }
+
+  .markerButton {
+    white-space: initial;
+  }
+
+  .markerButtonBackground {
+    white-space: initial;
+  }
+
+  .cardHeader {
+    margin-left: 4px;
+  }
+
+  .logoContainer {
+    white-space: initial;
+  }
+
+  .storeStats {
+    margin-left: 4px;
+    margin-right: 3px;
+    padding-right: 20px;
+  }
+
+  .statItem:first-child {
+    white-space: initial;
+  }
+
+  .statItem:last-child {
+    white-space: initial;
+  }
+
+  .storeTagline {
+    margin-left: 4px;
+  }
+
+  .storeDescription {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .detailsButtonBackground {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .timberlandMarker {
+    white-space: initial;
+    margin-top: 40px;
+  }
+
+  .timberlandContainer {
+    white-space: initial;
+    margin-left: 9px;
+  }
+
+  .mapControlIcon {
+    margin-left: 9px;
+    margin-right: 7px;
+  }
+}

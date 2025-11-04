@@ -1,0 +1,432 @@
+.container {
+  min-height: screen;
+  background-color: #0f0f12;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #161619;
+  flex-direction: column;
+  width: 230px;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .sidebar {
+    width: 80px;
+  }
+}
+
+@media (width<=640px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebarHeader {
+  align-items: center;
+  gap: 9px;
+  padding: 32px 23px 20px;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .sidebarHeader {
+    justify-content: center;
+  }
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.appName {
+  color: #c5bebd;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.navGroup {
+  flex-direction: column;
+  gap: 4px;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItemActive {
+  background-color: #1f1f22;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 23px;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .navItemActive {
+    justify-content: center;
+  }
+}
+
+.navLabelActive {
+  color: #c23d52;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.navItem {
+  align-items: center;
+  gap: 12px;
+  padding: 10px 23px;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .navItem {
+    justify-content: center;
+  }
+}
+
+.navIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.navLabel {
+  color: #aca1a0;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge {
+  color: #fff;
+  background-color: #fa3a5c;
+  border-radius: 9999px;
+  margin-left: auto;
+  padding: 2px 6px;
+  font-size: 10px;
+}
+
+.addNewButtonContainer {
+  margin-top: 20px;
+}
+
+.addNewButton {
+  background-color: #fa3a5c;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 170px;
+  height: 37px;
+  margin-left: 23px;
+  margin-right: 23px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width<=991px) {
+  .addNewButton {
+    width: 40px;
+  }
+}
+
+.addIcon {
+  width: 11px;
+  height: 11px;
+}
+
+.addButtonText {
+  color: #f5aab7;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sectionTitle {
+  color: #7d7371;
+  margin-top: 20px;
+  padding: 10px 23px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.userSection {
+  margin-top: auto;
+}
+
+.userProfile {
+  border-color: #1f1f22;
+  border-top-width: 1px;
+  padding: 28px 24px;
+}
+
+.userInfo {
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+@media (width<=991px) {
+  .userDetails {
+    display: none;
+  }
+}
+
+.userName {
+  color: #aba29f;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.userRole {
+  color: #7d7571;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.userNavGroup {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 24px;
+}
+
+@media (width<=991px) {
+  .mainContent {
+    padding: 16px;
+  }
+}
+
+.mainHeader {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.titleContainer {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.pageTitle {
+  color: #b9b9b9;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.infoIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.newDealButton {
+  background-color: #f9395b;
+  border: 1px solid #7f293a;
+  border-radius: 9.5px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  display: flex;
+  cursor: pointer;
+}
+
+.buttonIcon {
+  width: 11px;
+  height: 11px;
+}
+
+.buttonText {
+  color: #f5a3b2;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.searchFiltersContainer {
+  gap: 16px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .searchFiltersContainer {
+    flex-wrap: wrap;
+  }
+}
+
+.searchContainer {
+  flex: 1;
+  position: relative;
+}
+
+.searchLabel {
+  color: #505053;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  background-color: #1b1b1e;
+  border: 1px solid #262736;
+  border-radius: 9px;
+  width: 100%;
+  height: 38px;
+  padding-left: 70px;
+  padding-right: 16px;
+  color: #fff;
+}
+
+.filterButton {
+  background-color: #1a1a1d;
+  border: 1px solid #293143;
+  border-radius: 10.5px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  display: flex;
+  cursor: pointer;
+}
+
+.downloadButton {
+  background-color: #1b1b1e;
+  border: 1px solid #7d2838;
+  border-radius: 7px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  display: flex;
+  cursor: pointer;
+}
+
+.downloadButtonText {
+  color: #a02d42;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cardGrid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  display: grid;
+}
+
+@media (width<=991px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width<=640px) {
+  .cardGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.card {
+  background-color: #161619;
+  border-radius: 9px;
+  padding: 16px;
+}
+
+.cardHeader {
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.cardIcon {
+  width: 18px;
+  height: 19px;
+}
+
+.cardTitle {
+  color: #aaaaab;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardAmount {
+  color: #8a8a8b;
+  margin-left: auto;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 0 0 auto;
+}
+
+.cardContent {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+  display: grid;
+  margin-top: 12px;
+}
+
+.cardItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.cardItemDot {
+  width: 6px;
+  height: 6px;
+  background-color: #fa3a5c;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cardItemName {
+  color: #8a8a8b;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.cardItemValue {
+  color: #aca1a0;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0;
+}

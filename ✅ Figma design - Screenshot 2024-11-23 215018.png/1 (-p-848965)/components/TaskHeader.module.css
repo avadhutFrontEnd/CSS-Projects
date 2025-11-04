@@ -1,0 +1,101 @@
+.taskHeader {
+  z-index: 10;
+  width: 100%;
+  min-height: 28px;
+  padding: 2px 0;
+  display: flex;
+  position: relative;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 1px 14px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.taskColumn {
+  color: #aaafba;
+  text-align: center;
+  margin: auto 0;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.descriptionColumn {
+  color: #adb2bd;
+  margin: auto 0;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.metaColumns {
+  display: flex;
+  gap: 32px;
+  margin: auto 0;
+}
+
+.assigneeColumn {
+  color: #a6abb7;
+  font-size: 9px;
+}
+
+.dueDateColumn {
+  color: #a9aeba;
+  font-size: 10px;
+}
+
+.priorityColumn {
+  color: #aeb3be;
+  margin: auto 0;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.progressColumn {
+  color: #a6acb8;
+  margin: auto 0;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.createdColumn {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.createdLabel {
+  color: #a4aab6;
+  text-align: center;
+  flex-grow: 1;
+  margin: auto 0;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.sortIcon {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 5px;
+}
+
+.sortArrow {
+  aspect-ratio: 0.87;
+  object-fit: contain;
+  width: 7px;
+}
+
+@media (width <= 991px) {
+  .headerContent {
+    max-width: 100%;
+    margin-right: -7px;
+  }
+}

@@ -1,0 +1,445 @@
+.analyticsWrapper {
+  background-color: transparent;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 2px 5px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .analyticsWrapper {
+    max-width: 100%;
+    margin-top: 17px;
+  }
+}
+
+.analyticsBackground {
+  background-color: #1e1e1e;
+  border-radius: 18px;
+  width: 100%;
+  padding-bottom: 9px;
+}
+
+@media (width <= 991px) {
+  .analyticsBackground {
+    max-width: 100%;
+  }
+}
+
+.analyticsContent {
+  z-index: 10;
+  background-color: transparent;
+  width: 100%;
+  padding: 12px 12px 19px;
+}
+
+@media (width <= 991px) {
+  .analyticsContent {
+    max-width: 100%;
+  }
+}
+
+.analyticsColumns {
+  gap: 20px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .analyticsColumns {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.metricsColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 19%;
+  margin-left: 0;
+  line-height: normal;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricsColumn {
+    width: 100%;
+  }
+}
+
+.metricsContent {
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 13px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricsContent {
+    margin-top: 40px;
+  }
+}
+
+.metricsTitle {
+  color: #989898;
+  font-size: 11px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.metricsValues {
+  white-space: nowrap;
+  align-self: start;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 25px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricsValues {
+    white-space: initial;
+  }
+}
+
+.metricNumber {
+  color: #b6b6b6;
+  font-size: 24px;
+}
+
+.metricLabel {
+  color: #acacac;
+  text-align: center;
+  font-size: 11px;
+}
+
+.metricDescription {
+  color: #515151;
+  margin-top: 12px;
+  font-size: 8px;
+  margin-bottom: 0;
+}
+
+@media (width <= 991px) {
+  .metricDescription {
+    margin-right: 5px;
+  }
+}
+
+.chartsColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 81%;
+  margin-left: 20px;
+  line-height: normal;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .chartsColumn {
+    width: 100%;
+  }
+}
+
+.chartsContent {
+  flex-grow: 1;
+  align-items: start;
+  gap: 20px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .chartsContent {
+    margin-top: 40px;
+  }
+}
+
+.timeframeSelector {
+  white-space: nowrap;
+  align-items: center;
+  gap: 11px;
+  font-size: 10px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .timeframeSelector {
+    white-space: initial;
+  }
+}
+
+.timeframeButton {
+  color: #6a6a6a;
+  text-align: center;
+  flex-grow: 1;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.timeframeIndicator {
+  aspect-ratio: 2.24;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 56px;
+}
+
+.averageMetrics {
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  margin-top: 19px;
+  padding-left: 7px;
+  padding-right: 35px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .averageMetrics {
+    padding-right: 20px;
+  }
+}
+
+.metricRow {
+  white-space: nowrap;
+  align-items: stretch;
+  gap: 11px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .metricRow {
+    white-space: initial;
+  }
+}
+
+.averageNumber {
+  color: #bbb;
+  font-size: 26px;
+}
+
+.averageLabel {
+  color: #9f9f9f;
+  text-align: center;
+  font-size: 11px;
+}
+
+.averageDescription {
+  color: #535353;
+  margin-top: 12px;
+  font-size: 9px;
+  margin-bottom: 0;
+}
+
+.yearlyMetrics {
+  flex-direction: column;
+  align-items: start;
+  display: flex;
+}
+
+.yearSelector {
+  white-space: nowrap;
+  text-align: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 13px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .yearSelector {
+    white-space: initial;
+  }
+}
+
+.yearButton {
+  color: #727272;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.allButton {
+  color: #7a7a7a;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.yearIndicator {
+  aspect-ratio: 0.967;
+  color: #8f8f8f;
+  flex-direction: column;
+  align-self: stretch;
+  width: 29px;
+  padding: 11px 12px;
+  font-size: 12px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .yearIndicator {
+    white-space: initial;
+  }
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.maximumMetrics {
+  white-space: nowrap;
+  align-items: stretch;
+  gap: 11px;
+  margin-top: 17px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .maximumMetrics {
+    white-space: initial;
+  }
+}
+
+.maximumNumber {
+  color: #b6b6b6;
+  font-size: 24px;
+}
+
+.maximumLabel {
+  color: #a8a8a8;
+  text-align: center;
+  font-size: 10px;
+}
+
+.maximumDescription {
+  color: #555;
+  margin-top: 13px;
+  font-size: 8px;
+  margin-bottom: 0;
+}
+
+.chartContainer {
+  white-space: nowrap;
+  text-align: center;
+  align-items: stretch;
+  gap: 8px;
+  width: 469px;
+  max-width: 100%;
+  margin-left: 19px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .chartContainer {
+    white-space: initial;
+  }
+}
+
+.daysContainer {
+  flex-direction: column;
+  align-items: start;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .daysContainer {
+    white-space: initial;
+  }
+}
+
+.dayLabel {
+  color: #575859;
+  align-self: stretch;
+  margin-bottom: 10px;
+}
+
+.dayLabel:nth-child(2) {
+  color: #555657;
+  margin-top: 10px;
+}
+
+.dayLabel:nth-child(3) {
+  color: #545556;
+  align-self: stretch;
+  margin-top: 13px;
+  font-size: 7px;
+}
+
+.dayLabel:nth-child(4) {
+  color: #454647;
+  align-self: stretch;
+  margin-top: 13px;
+  font-size: 9px;
+}
+
+.dayLabel:nth-child(5) {
+  color: #646566;
+  margin-top: 10px;
+  font-size: 9px;
+}
+
+.dayLabel:nth-child(6) {
+  color: #545556;
+  margin-top: 12px;
+  font-size: 6px;
+}
+
+.dayLabel:nth-child(7) {
+  color: #474849;
+  margin-top: 14px;
+}
+
+.chartImage {
+  aspect-ratio: 3;
+  object-fit: contain;
+  object-position: center;
+  flex: 1 0 0;
+  width: fit-content;
+}
+
+@media (width <= 991px) {
+  .chartImage {
+    max-width: 100%;
+  }
+}

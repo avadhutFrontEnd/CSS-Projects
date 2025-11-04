@@ -1,0 +1,290 @@
+.trackingWrapper {
+  background-color: transparent;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 1px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .trackingWrapper {
+    margin-top: 20px;
+  }
+}
+
+.trackingBackground {
+  background-color: #1f1f1f;
+  border-radius: 16px;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 12px 11px;
+  display: flex;
+}
+
+.trackingHeader {
+  align-self: stretch;
+  align-items: stretch;
+  gap: 33px;
+  display: flex;
+}
+
+.trackingInfo {
+  flex-direction: column;
+  flex: 1;
+  align-self: start;
+  align-items: stretch;
+  margin-top: 10px;
+  font-size: 9px;
+  display: flex;
+}
+
+.trackingTitle {
+  color: #9d9d9d;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 600;
+}
+
+@media (width <= 991px) {
+  .trackingTitle {
+    margin-right: 6px;
+  }
+}
+
+.trackingId {
+  color: #585858;
+  align-self: start;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.trackingNumber {
+  color: #919191;
+  align-self: start;
+  margin-top: 6px;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.locationInfo {
+  align-items: stretch;
+  gap: 4px;
+  margin-top: 16px;
+  display: flex;
+}
+
+.locationIcon {
+  aspect-ratio: 0.11;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 9px;
+}
+
+.locationDetails {
+  flex-direction: column;
+  align-items: start;
+  display: flex;
+}
+
+.locationLabel {
+  color: #525252;
+  font-size: 8px;
+  margin: 0;
+}
+
+.locationValue {
+  color: #757575;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.departureLabel {
+  color: #565656;
+  align-self: stretch;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.departureValue {
+  color: #717171;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.arrivalLabel {
+  color: #585858;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.arrivalValue {
+  color: #7a7a7a;
+  align-self: stretch;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+@media (width <= 991px) {
+  .arrivalValue {
+    margin-right: 4px;
+  }
+}
+
+.statusInfo {
+  color: #7a7a7a;
+  flex: 1;
+  font-size: 8px;
+}
+
+.statusContainer {
+  color: #7f8340;
+  flex-direction: column;
+  padding-left: 18px;
+  display: flex;
+}
+
+.statusIcon {
+  aspect-ratio: 0.97;
+  object-fit: contain;
+  object-position: center;
+  align-self: end;
+  width: 29px;
+}
+
+.statusButton {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-self: start;
+  align-items: stretch;
+  margin-top: 20px;
+  padding: 2px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.statusButtonBg {
+  background-color: #c0c657;
+  border: 1px solid #a7aa4e;
+  border-radius: 8px;
+  padding: 6px 8px;
+  color: #7f8340;
+}
+
+.statusDate {
+  color: #727272;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+@media (width <= 991px) {
+  .statusDate {
+    margin-right: 5px;
+  }
+}
+
+.departureDate {
+  margin-top: 28px;
+  font-size: 9px;
+  margin-bottom: 0;
+  color: #727272;
+}
+
+@media (width <= 991px) {
+  .departureDate {
+    margin-right: 5px;
+  }
+}
+
+.arrivalDate {
+  margin-top: 26px;
+  margin-bottom: 0;
+  color: #727272;
+}
+
+@media (width <= 991px) {
+  .arrivalDate {
+    margin-right: 5px;
+  }
+}
+
+.routeInfo {
+  align-items: start;
+  gap: 13px;
+  margin-top: 13px;
+  font-size: 8px;
+  display: flex;
+}
+
+.routeIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 23px;
+}
+
+.routeDetails {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.routeLabel {
+  color: #5e5e5e;
+  align-self: start;
+  margin: 0;
+}
+
+.routeValue {
+  color: #727272;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.deliveryInfo {
+  align-items: stretch;
+  gap: 13px;
+  margin-top: 13px;
+  font-size: 9px;
+  display: flex;
+}
+
+.deliveryIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 23px;
+}
+
+.deliveryDetails {
+  flex-direction: column;
+  align-self: start;
+  align-items: stretch;
+  display: flex;
+}
+
+.deliveryLabel {
+  color: #555;
+  margin: 0;
+}
+
+.deliveryDate {
+  color: #7d7d7d;
+  align-self: start;
+  margin-top: 5px;
+  margin-bottom: 0;
+}

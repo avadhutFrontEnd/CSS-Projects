@@ -1,0 +1,184 @@
+.toastContainer {
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-right: -28px;
+  padding: 2px 80px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .toastContainer {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.toastContent {
+  flex-direction: column;
+  width: 1288px;
+  max-width: 1288px;
+  min-height: 47px;
+  padding: 2px 48px 13px 4px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .toastContent {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+}
+
+.toastBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.toastDivider {
+  aspect-ratio: 333.33;
+  object-fit: contain;
+  object-position: center;
+  width: 681px;
+  max-width: 100%;
+}
+
+.toastMessage {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 10px;
+  margin-left: 36px;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 991px) {
+  .toastMessage {
+    max-width: 100%;
+  }
+}
+
+.toastInfo {
+  align-items: stretch;
+  gap: 25px;
+  display: flex;
+}
+
+.toastType {
+  white-space: nowrap;
+  align-items: stretch;
+  gap: 5px;
+  font-size: 14px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .toastType {
+    white-space: initial;
+  }
+}
+
+.success {
+  color: #5d846f;
+}
+
+.error {
+  color: #8f585a;
+}
+
+.warning {
+  color: #85825f;
+}
+
+.info {
+  color: #678dd3;
+}
+
+.toastTypeIcon {
+  aspect-ratio: 0.95;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 19px;
+}
+
+.toastTypeText {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.toastText {
+  color: #878890;
+  flex-basis: auto;
+  font-size: 13px;
+}
+
+.toastActions {
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 12px;
+  display: flex;
+}
+
+.toastAction {
+  color: #76787f;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  flex-grow: 1;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.actionIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 11px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.actionDivider {
+  aspect-ratio: 0.07;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: 1px;
+}
+
+.closeIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+}

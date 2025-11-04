@@ -1,0 +1,52 @@
+.chartCard {
+  background-color: #fff;
+  border-radius: 12px;
+  grid-column: span 4;
+  padding: 20px;
+}
+
+@media (width <= 991px) {
+  .chartCard {
+    grid-column: span 6;
+  }
+}
+
+@media (width <= 640px) {
+  .chartCard {
+    grid-column: span 3;
+  }
+}
+
+.chartTitle {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.legendContainer {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.legendItem {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.legendDot {
+  background-color: #ddd;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+}
+
+.chartContainer {
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+}

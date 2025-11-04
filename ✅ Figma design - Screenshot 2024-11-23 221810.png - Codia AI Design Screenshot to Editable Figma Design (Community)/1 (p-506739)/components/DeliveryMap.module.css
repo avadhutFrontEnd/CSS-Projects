@@ -1,0 +1,299 @@
+.mapContainer {
+  border-radius: 0 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 380px;
+  margin-top: 13px;
+  padding-top: 14px;
+  padding-left: 59px;
+  padding-right: 12px;
+  position: relative;
+}
+
+.mapBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.mapContent {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  align-items: stretch;
+  width: 456px;
+  max-width: 100%;
+  position: relative;
+}
+
+.locationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.addressButton {
+  background-color: #fff;
+  border: 1px solid #efefe9;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 14px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.addressLine {
+  color: #c5cbd2;
+  font-size: 10px;
+  margin: 0;
+}
+
+.cityLine {
+  color: #7e8085;
+  margin: 11px 0 0;
+  font-size: 11px;
+}
+
+.markerContainer {
+  aspect-ratio: 0.465;
+  border-radius: 11px 9px 7px 6px;
+  display: flex;
+  flex-direction: column;
+  width: 33px;
+  padding: 1px 0;
+  position: relative;
+}
+
+.marker {
+  position: relative;
+  width: 100%;
+}
+
+.markerBackground {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.markerIcon {
+  aspect-ratio: 0.97;
+  object-fit: contain;
+  object-position: center;
+  z-index: 10;
+  width: 100%;
+}
+
+.markerBottom {
+  aspect-ratio: 0.941;
+  border-radius: 0 0 9px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 16px 6px;
+  position: relative;
+}
+
+.markerBottomBg {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.markerLine {
+  aspect-ratio: 4;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  position: relative;
+}
+
+.markerDot {
+  aspect-ratio: 1.03;
+  object-fit: contain;
+  object-position: center;
+  width: 33px;
+  margin-top: 8px;
+}
+
+.destinationButton {
+  background-color: #fefefe;
+  border: 1px solid #dbe9d7;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 127px;
+  max-width: 100%;
+  margin-top: 29px;
+  margin-right: 22px;
+  padding: 13px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  align-self: flex-end;
+  text-align: left;
+  cursor: pointer;
+}
+
+.destinationButton .addressLine {
+  color: #c1c7cf;
+}
+
+.destinationButton .cityLine {
+  color: #7b7e82;
+  margin-top: 10px;
+}
+
+.statusCard {
+  z-index: 10;
+  width: 489px;
+  max-width: 100%;
+  margin-top: 113px;
+  padding: 2px 7px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.statusCardContent {
+  background-color: #fff;
+  border-radius: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding: 11px 17px;
+}
+
+.statusItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.statusIcon {
+  aspect-ratio: 1.08;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 13px;
+}
+
+.statusLabel {
+  color: #86888d;
+  font-size: 11px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.statusValue {
+  color: #c5cbd3;
+  margin: 11px 0 0;
+  font-size: 8px;
+}
+
+.speedContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.speedContainer .statusIcon {
+  aspect-ratio: 1.07;
+  width: 15px;
+}
+
+.speedContainer .statusLabel {
+  margin: auto 0;
+}
+
+.statusItem:nth-child(2) .statusValue {
+  margin-top: 9px;
+  margin-left: 19px;
+  font-size: 9px;
+}
+
+.statusItem:nth-child(3) .statusIcon {
+  aspect-ratio: 0.93;
+  width: 14px;
+}
+
+.statusItem:nth-child(3) .statusLabel {
+  font-size: 10px;
+}
+
+.statusItem:nth-child(3) .statusValue {
+  margin-top: 10px;
+  font-size: 9px;
+}
+
+.statusItem:nth-child(4) .statusIcon {
+  aspect-ratio: 0.5;
+  width: 7px;
+}
+
+.statusItem:nth-child(4) .statusLabel {
+  font-size: 10px;
+}
+
+.statusItem:nth-child(4) .statusValue {
+  margin-top: 11px;
+  font-size: 9px;
+}
+
+@media (width <= 991px) {
+  .mapContainer {
+    max-width: 100%;
+    margin-right: 6px;
+    padding-left: 20px;
+  }
+
+  .locationContainer {
+    max-width: 100%;
+  }
+
+  .addressButton {
+    padding-right: 20px;
+  }
+
+  .destinationButton {
+    margin-right: 10px;
+    padding-right: 20px;
+  }
+
+  .statusCard {
+    margin-top: 40px;
+  }
+
+  .statusCardContent {
+    max-width: 100%;
+  }
+
+  .speedContainer {
+    white-space: initial;
+  }
+
+  .statusItem:nth-child(2) .statusValue {
+    margin-left: 10px;
+  }
+}

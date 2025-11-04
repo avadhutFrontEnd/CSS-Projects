@@ -1,0 +1,30 @@
+.statusBadge {
+  color: #867860;
+  white-space: nowrap;
+  align-self: stretch;
+  align-items: stretch;
+  gap: 3px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 12px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .statusBadge {
+    white-space: initial;
+  }
+}
+
+.statusIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 16px;
+}
+
+.statusText {
+  margin-top: auto;
+  margin-bottom: auto;
+}

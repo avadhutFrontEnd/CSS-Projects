@@ -1,0 +1,101 @@
+.taskGroup {
+  margin-left: 28px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.groupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.expandButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.expandIcon {
+  aspect-ratio: 0.6;
+  object-fit: contain;
+  width: 6px;
+  margin: auto 0;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.categoryIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 9px;
+  margin: auto 0;
+}
+
+.title {
+  color: #a7a9ad;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.countBadge {
+  color: #c4c8d2;
+  text-align: center;
+  background-color: #f6f7f9;
+  border-radius: 0 3px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 5px;
+  font-size: 8px;
+}
+
+.countIcon {
+  aspect-ratio: 1.14;
+  object-fit: contain;
+  width: 8px;
+}
+
+.addButton {
+  color: #c1c6d0;
+  text-align: center;
+  background-color: #f6f7f9;
+  border: none;
+  padding: 3px 5px;
+  font-size: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.addIcon {
+  aspect-ratio: 1.14;
+  object-fit: contain;
+  width: 8px;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+@media (width <= 991px) {
+  .taskGroup {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+}

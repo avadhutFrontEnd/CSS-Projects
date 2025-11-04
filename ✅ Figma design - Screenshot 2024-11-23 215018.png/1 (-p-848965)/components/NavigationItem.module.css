@@ -1,0 +1,39 @@
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 14px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #9fa4b0;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 10px;
+  flex-shrink: 0;
+}
+
+.label {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 112px;
+}
+
+.active {
+  background-color: #e4e9f0;
+  border-radius: 3px;
+}
+
+@media (width <= 991px) {
+  .navItem {
+    white-space: initial;
+  }
+}

@@ -1,0 +1,33 @@
+.dashboard {
+  background-color: #1a1a1d;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  display: flex;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
+
+.transactionGrid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  display: grid;
+}
+
+@media (width<=991px) {
+  .transactionGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (width<=640px) {
+  .mainContent {
+    padding: 10px;
+  }
+
+  .transactionGrid {
+    grid-template-columns: 1fr;
+  }
+}

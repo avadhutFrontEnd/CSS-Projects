@@ -1,0 +1,67 @@
+.dashboardContainer {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  display: flex;
+}
+
+.contentArea {
+  flex-grow: 1;
+  padding: 20px 40px;
+}
+
+.dashboardHeader {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.dashboardTitle {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.actionButtons {
+  gap: 15px;
+  display: flex;
+}
+
+@media (width <= 640px) {
+  .actionButtons {
+    flex-direction: column;
+  }
+}
+
+.actionButton {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  display: flex;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.dashboardGrid {
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  display: grid;
+}
+
+@media (width <= 991px) {
+  .dashboardGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (width <= 640px) {
+  .dashboardGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,154 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 841px;
+  padding: 36px 1px 36px 32px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.title {
+  color: #5d6169;
+  font-size: 18px;
+  position: relative;
+  margin: 0;
+}
+
+.searchContainer {
+  color: #d6d6d6;
+  white-space: nowrap;
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 12px;
+  padding: 1px 34px 1px 3px;
+  font-size: 14px;
+  position: relative;
+}
+
+.searchBox {
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  padding: 12px 14px;
+  flex: 1 0 0;
+}
+
+.searchIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 19px;
+}
+
+.searchText {
+  flex: auto;
+  width: 286px;
+}
+
+.profileImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: 43px;
+}
+
+.filterContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+  gap: 3px;
+  margin-top: 4px;
+  padding: 5px 80px 5px 3px;
+  font-size: 12px;
+  position: relative;
+}
+
+.dateFilter {
+  color: #7d7f84;
+  white-space: nowrap;
+  background-color: #fefefe;
+  border: 1px solid #f0f3f9;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 9px 15px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.statusFilter {
+  color: #787a7f;
+  white-space: nowrap;
+  background-color: #fefefe;
+  border: 1px solid #f0f3f9;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.arrowIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (width <= 991px) {
+  .sidebar {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
+  .searchContainer {
+    white-space: initial;
+    margin-right: 2px;
+    padding-right: 20px;
+  }
+
+  .searchBox {
+    white-space: initial;
+  }
+
+  .filterContainer {
+    padding-right: 20px;
+  }
+
+  .dateFilter {
+    white-space: initial;
+  }
+
+  .statusFilter {
+    white-space: initial;
+  }
+}

@@ -1,0 +1,174 @@
+.sidebar {
+  flex-direction: column;
+  align-items: stretch;
+  width: 16%;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  background-color: transparent;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 11px;
+  padding: 6px 0;
+  color: #747576;
+  font-size: 13px;
+}
+
+.logo {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 21px;
+}
+
+.title {
+  margin: auto 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.workspaceSelector {
+  color: #9d9ea3;
+  margin-top: 5px;
+  padding: 6px 5px;
+  font-size: 9px;
+}
+
+.workspaceButton {
+  background-color: transparent;
+  width: 100%;
+  padding: 1px 2px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.workspaceIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 17px;
+}
+
+.workspaceName {
+  flex-grow: 1;
+  width: 111px;
+  margin: auto 0;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.navigation {
+  padding: 2px;
+  font-size: 10px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+}
+
+.projectsSection {
+  width: 100%;
+  padding: 2px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  color: #92959b;
+  white-space: nowrap;
+  font-size: 9px;
+}
+
+.sectionTitle {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.expandIcon {
+  aspect-ratio: 4.5;
+  object-fit: contain;
+  width: 9px;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.newButton {
+  color: #9fa4b0;
+  text-align: center;
+  align-self: flex-start;
+  margin-top: 12px;
+  margin-left: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 9px;
+}
+
+.bottomNav {
+  margin-top: 240px;
+}
+
+.userProfile {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin-top: 7px;
+  padding: 0 6px 10px 6px;
+  font-size: 8px;
+}
+
+.userAvatar {
+  aspect-ratio: 0.91;
+  object-fit: contain;
+  width: 20px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.userName {
+  color: #7f848f;
+  font-size: 8px;
+}
+
+.userEmail {
+  color: #c6cbd4;
+  font-size: 8px;
+}
+
+@media (width <= 991px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .newButton {
+    margin-left: 10px;
+  }
+
+  .bottomNav {
+    margin-top: 40px;
+  }
+
+  .userProfile {
+    margin-left: 5px;
+  }
+
+  .userName {
+    margin-right: 6px;
+  }
+}

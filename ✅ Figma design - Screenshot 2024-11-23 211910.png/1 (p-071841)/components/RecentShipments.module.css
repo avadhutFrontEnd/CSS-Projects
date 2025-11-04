@@ -1,0 +1,59 @@
+.shipmentsCard {
+  background-color: #fff;
+  border-radius: 12px;
+  grid-column: span 6;
+  padding: 20px;
+}
+
+@media (width <= 991px) {
+  .shipmentsCard {
+    grid-column: span 6;
+  }
+}
+
+@media (width <= 640px) {
+  .shipmentsCard {
+    grid-column: span 3;
+  }
+}
+
+.shipmentsHeader {
+  margin-bottom: 20px;
+}
+
+.shipmentsTitle {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.shipmentsSubtitle {
+  color: #999;
+  font-size: 13px;
+  margin: 0;
+}
+
+.shipmentsTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableHeader {
+  text-align: left;
+  color: #999;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.tableCell {
+  border-bottom: 1px solid #eee;
+  padding: 15px 10px;
+}
+
+.shipmentImage {
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+}

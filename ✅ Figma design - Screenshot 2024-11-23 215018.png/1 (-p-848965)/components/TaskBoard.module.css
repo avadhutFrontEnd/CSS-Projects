@@ -1,0 +1,265 @@
+.taskBoard {
+  flex-direction: column;
+  align-items: stretch;
+  width: 84%;
+  margin-left: 20px;
+  display: flex;
+  position: relative;
+}
+
+.boardHeader {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  min-height: 39px;
+  padding: 6px 12px 6px 6px;
+  position: relative;
+}
+
+.viewOptions {
+  display: flex;
+  align-items: flex-start;
+  white-space: nowrap;
+  font-size: 10px;
+}
+
+.viewButton {
+  color: #aba6ff;
+  background-color: transparent;
+  border: 1px solid #d1d9e3;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 8px 10px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.viewTabs {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  background-color: #f2f3f6;
+  border: 2px solid #eaeef3;
+  padding: 7px 9px;
+  color: #bcc0cc;
+}
+
+.viewTab {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.viewIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 9px;
+}
+
+.profileImage {
+  aspect-ratio: 1.08;
+  object-fit: contain;
+  border-radius: 5px;
+  width: 26px;
+}
+
+.searchArea {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #fefefe;
+  border: 1px solid #f4f4f6;
+  border-radius: 7px;
+  padding: 8px;
+  color: #c7cad4;
+  font-size: 9px;
+}
+
+.searchIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 10px;
+}
+
+.searchPlaceholder {
+  color: #c7cad4;
+}
+
+.filterButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #fefeff;
+  border: 1px solid #f3f3f5;
+  border-radius: 3px 0 0 3px;
+  padding: 9px 8px;
+  color: #9b9da2;
+  font-size: 10px;
+  white-space: nowrap;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filterIcon {
+  aspect-ratio: 1.43;
+  object-fit: contain;
+  width: 10px;
+}
+
+.userAvatar {
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 6px;
+  width: 25px;
+}
+
+.statusBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  color: #e3b46e;
+  font-size: 10px;
+}
+
+.statusArrow {
+  aspect-ratio: 4.5;
+  object-fit: contain;
+  width: 9px;
+  margin: auto 0;
+}
+
+.statusIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 2px;
+  width: 16px;
+  margin: auto 0;
+}
+
+.taskGroups {
+  margin-top: -4px;
+  padding: 5px 2px;
+  position: relative;
+  z-index: 10;
+}
+
+.addTaskButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: #babec7;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 3px 11px 3px 1px;
+  cursor: pointer;
+}
+
+.addIcon {
+  aspect-ratio: 0.87;
+  object-fit: contain;
+  width: 7px;
+  margin: auto 0;
+}
+
+.divider {
+  background-color: #fdfdfe;
+  height: 1px;
+  margin-top: 18px;
+  border: none;
+}
+
+.readySection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  padding: 9px 3px 1px 3px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.readyArrow {
+  aspect-ratio: 4.5;
+  object-fit: contain;
+  width: 9px;
+  margin: auto 0;
+}
+
+.readyCount {
+  aspect-ratio: 0.941;
+  color: #8a8d95;
+  text-align: center;
+  border-radius: 4px;
+  width: 16px;
+  margin-top: 4px;
+  padding: 4px 6px;
+  font-size: 8px;
+  position: relative;
+}
+
+.completedTasks {
+  margin-top: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+@media (width <= 991px) {
+  .taskBoard {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .topBar {
+    max-width: 100%;
+  }
+
+  .viewOptions {
+    white-space: initial;
+  }
+
+  .viewButton,
+  .viewTabs {
+    white-space: initial;
+  }
+
+  .taskGroups {
+    max-width: 100%;
+    margin-right: 6px;
+  }
+
+  .readySection {
+    margin-right: 4px;
+    padding-right: 20px;
+  }
+}

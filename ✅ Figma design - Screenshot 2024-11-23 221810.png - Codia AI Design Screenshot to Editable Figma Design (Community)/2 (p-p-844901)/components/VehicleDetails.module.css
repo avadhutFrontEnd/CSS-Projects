@@ -1,0 +1,132 @@
+.vehicleDetailsSection {
+  margin-top: 30px;
+}
+
+.tabsContainer {
+  border-bottom: 1px solid #eee;
+  gap: 53px;
+  padding: 15px 45px;
+  display: flex;
+}
+
+.tabButton {
+  color: #7c7f83;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.detailsContainer {
+  padding: 20px;
+}
+
+.brandContainer {
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.brandLogo {
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+}
+
+.brandName {
+  color: #7a7d81;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ratingContainer {
+  color: #7e8085;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  display: flex;
+}
+
+.starIcon {
+  width: 13px;
+  height: 13px;
+}
+
+.vehicleInfoContainer {
+  gap: 40px;
+  display: flex;
+}
+
+.truckImageContainer {
+  width: 279px;
+  position: relative;
+}
+
+.truckImage {
+  width: 100%;
+}
+
+.capacityOverlay {
+  color: #b7c9fe;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.specificationContainer {
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  display: flex;
+}
+
+.specItem {
+  flex-direction: column;
+  gap: 4px;
+  display: flex;
+}
+
+.specLabel {
+  color: #bbc2cb;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.specValue {
+  color: #797c80;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (width<=991px) {
+  .tabsContainer {
+    gap: 30px;
+    padding: 15px 20px;
+  }
+
+  .vehicleInfoContainer {
+    flex-direction: column;
+  }
+}
+
+@media (width<=640px) {
+  .tabsContainer {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .tabButton {
+    font-size: 11px;
+  }
+
+  .vehicleInfoContainer {
+    gap: 20px;
+  }
+}
