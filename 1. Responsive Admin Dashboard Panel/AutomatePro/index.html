@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutomatePro - Adrian Bert - CRM Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Import Inter Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="./assets/" class="sidebar-header-logo" alt="" />
+          </div>
+          <div class="sidebar-brand">AutomatePro</div>
+        </div>
+
+        <div class="workspace-selector">
+          <div class="workspace-icon">
+            <img src="./assets/" alt="" />
+          </div>
+          <span style="flex: 1; font-size: 14px; font-weight: 500"
+            >Kelioto Studio</span
+          >
+          <span
+            class="workspace-selector-dropdown"
+            style="color: var(--text-tertiary)"
+          >
+          </span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="#" class="nav-item">
+            <span class="nav-icon"></span>
+            <span class="sidebar-nav-text">Dashboard</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon"></span>
+            <span class="sidebar-nav-text">Inbox</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon"></span>
+            <span class="sidebar-nav-text">Teams</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon"></span>
+            <span class="sidebar-nav-text">Assigned to me</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon"></span>
+            <span class="sidebar-nav-text">Created by me</span>
+          </a>
+        </nav>
+
+        <!-- Favorites Section -->
+        <div class="nav-section">
+          <!-- Title -->
+          <div class="nav-section-title">
+            <span class="nav-section-title-name">
+              <!-- Dropdown icon -->
+              <span class="nav-section-title-icon"></span>
+              <span>Favorites</span>
+            </span>
+            <span class="nav-section-title-buttons">
+              <!-- Button -->
+              <span class="nav-section-title-button"></span>
+              <!-- Button -->
+              <span class="nav-section-title-button"></span>
+            </span>
+          </div>
+        </div>
+        <!-- Favorites Dropdown List  -->
+        <div class="nav-section-title-projects-dropdown-list"></div>
+        <!-- Projects Section -->
+        <div class="nav-section">
+          <!-- Title -->
+          <div class="nav-section-title">
+            <span class="nav-section-title-name">
+              <!-- Dropdown icon -->
+              <span class="nav-section-title-icon"></span>
+              <span>Projects</span>
+            </span>
+            <span class="nav-section-title-buttons">
+              <!-- Button -->
+              <span class="nav-section-title-button"></span>
+              <!-- Button -->
+              <span class="nav-section-title-button"></span>
+            </span>
+          </div>
+        </div>
+        <!-- Projects Dropdown List  -->
+        <div class="nav-section-title-projects-dropdown-list">
+          <!-- Item 1 -->
+          <a
+            href="#"
+            class="nav-section-title-projects-dropdown-list-item projects-dropdown-list-item-active"
+          >
+            <span class="nav-section-title-projects-dropdown-list-icon"></span>
+            <span class="nav-section-title-projects-dropdown-list-text"
+              >Adrian Bert - CRM Da..</span
+            >
+          </a>
+          <!-- Item 2 -->
+          <a href="#" class="nav-section-title-projects-dropdown-list-item">
+            <span class="nav-section-title-projects-dropdown-list-icon"></span>
+            <span class="nav-section-title-projects-dropdown-list-text"
+              >Trust - SaaS Dashbo...</span
+            >
+          </a>
+          <!-- Item 3 -->
+          <a href="#" class="nav-section-title-projects-dropdown-list-item">
+            <span class="nav-section-title-projects-dropdown-list-icon"></span>
+            <span class="nav-section-title-projects-dropdown-list-text"
+              >Pertamina Project</span
+            >
+          </a>
+          <!-- Item 4 -->
+          <a href="#" class="nav-section-title-projects-dropdown-list-item">
+            <span class="nav-section-title-projects-dropdown-list-icon"></span>
+            <span class="nav-section-title-projects-dropdown-list-text"
+              >Garuda Project</span
+            >
+          </a>
+        </div>
+
+        <!-- New Section -->
+        <div class="nav-items-section">
+          <!-- Item 1 -->
+          <div class="nav-items-section-title">
+            <span class="nav-items-section-title-name">
+              <!-- Dropdown icon -->
+              <span class="nav-items-section-title-icon"></span>
+              <span>New</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Spacer to push footer to bottom -->
+        <div style="flex: 1"></div>
+
+        <!-- Footer Section -->
+        <div class="sidebar-footer">
+          <div class="nav-items-section-title">
+            <span class="nav-items-section-title-name">
+              <span class="nav-items-section-title-icon"></span>
+              <span>Settings</span>
+            </span>
+          </div>
+          <div class="nav-items-section-title">
+            <span class="nav-items-section-title-name">
+              <span class="nav-items-section-title-icon"></span>
+              <span>Help Center</span>
+            </span>
+          </div>
+
+          <div class="user-profile">
+            <div class="user-avatar"></div>
+            <div class="user-info">
+              <div class="user-name">Darlene Robertson</div>
+              <div class="user-email">darlene@gmail.com</div>
+            </div>
+            <span style="color: var(--text-tertiary)">▾</span>
+          </div>
+        </div>
+      </aside>
+      <!-- Main Content -->
+      <main class="main-content"></main>
+    </div>
+  </body>
+</html>

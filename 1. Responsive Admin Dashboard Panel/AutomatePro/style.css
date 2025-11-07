@@ -1,0 +1,419 @@
+/* AutomatePro - Project Management Dashboard */
+/* Color Palette */
+:root {
+  /* Primary Colors */
+  --pale-grey: #fdfdfe;
+  --chefs-hat: #f3f4f6;
+  --lilac-champagne: #e0e1e6;
+  --rapunzel-silver: #d1d3d6;
+  --middle-yellow-red: #eab075;
+  --himalaya-sky: #7798c3;
+
+  /* UI Colors */
+  --primary-blue: #6366f1;
+  --primary-purple: #8b5cf6;
+  --urgent-red: #ef4444;
+  --normal-teal: #14b8a6;
+  --low-grey: #9ca3af;
+
+  /* Progress Colors */
+  --progress-purple: #8b5cf6;
+  --progress-blue: #3b82f6;
+
+  /* Text Colors */
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-tertiary: #9ca3af;
+
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-sidebar: #fdfdfe;
+
+  /* Border Colors */
+  --border-light: #e5e7eb;
+  --border-medium: #d1d5db;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  width: 1440px;
+  height: 1024px;
+  /* overflow: hidden; */
+  /* background-color: var(--chefs-hat); */
+  background-color: crimson;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 221px;
+  height: 1024px;
+  background-color: var(--chefs-hat);
+  /* border-right: 1px solid var(--border-light); */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sidebar-header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* padding: var(--spacing-md); */
+  margin-bottom: 18px;
+}
+
+.sidebar-logo {
+  width: 30px;
+  height: 30px;
+  background-color: var(--text-primary);
+  border-radius: 5px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* color: white; */
+  /* font-weight: 700; */
+  /* font-size: 16px; */
+}
+
+.sidebar-brand {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.workspace-selector {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  /* padding: var(--spacing-md); */
+  padding: 0 7px 0 7px;
+  background-color: var(--bg-primary);
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.workspace-icon {
+  width: 23px;
+  height: 23px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--primary-purple)
+  );
+  border-radius: 5px;
+}
+
+.workspace-selector-dropdown {
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.sidebar-nav {
+  width: 100%;
+  /* height: ; */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+
+.nav-item {
+  width: 100%;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  /* padding: var(--spacing-md); */
+  /* border-radius: var(--radius-md); */
+  color: var(--text-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+/* .nav-item:hover {
+  background-color: var(--chefs-hat);
+  color: var(--text-primary);
+} */
+
+/* .nav-item.active {
+  background-color: var(--chefs-hat);
+  color: var(--primary-blue);
+  font-weight: 500;
+} */
+
+.nav-icon {
+  width: 17px;
+  height: 17px;
+  background-color: var(--text-primary);
+  border-radius: 5px;
+}
+
+.sidebar-nav-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.nav-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 10px 0px 10px;
+  /* border-bottom: 2px solid black; */
+}
+
+.nav-section-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  /* padding: var(--spacing-md) var(--spacing-sm); */
+  /* padding: 16px 10px 16px 10px; */
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.8px; */
+  /* margin-top: var(--spacing-lg); */
+}
+
+.nav-section-title-name {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-section-title-buttons {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-section-title-icon {
+  width: 17px;
+  height: 17px;
+  background-color: var(--text-primary);
+  border-radius: 5px;
+}
+
+.nav-section-title-button {
+  width: 17px;
+  height: 17px;
+  background-color: var(--text-primary);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .nav-section-title button {
+  background: none;
+  border: none;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  font-size: 16px;
+} */
+
+/* .nav-section-title-projects {
+  height: 188px;
+} */
+
+.nav-section-title-projects-dropdown-list {
+  width: 100%;
+  /* height: ; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 16px 0;
+  border-bottom: 2px solid black; 
+}
+
+.nav-section-title-projects-dropdown-list-item {
+  width: 100%;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  padding: 17px;
+  gap: 6px;
+  
+}
+
+.projects-dropdown-list-item-active {
+border: 1px solid gray;
+  border-radius: 6px;
+  background-color: var(--chefs-hat);
+}
+
+.nav-section-title-projects-dropdown-list-icon {
+  width: 17px;
+  height: 17px;
+  background-color: var(--text-primary);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-section-title-projects-dropdown-list-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+.nav-items-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.nav-items-section-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-items-section-title:hover {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.nav-items-section-title-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-items-section-title-icon {
+  width: 18px;
+  height: 18px;
+  background-color: var(--text-tertiary);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.sidebar-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  margin-top: auto;
+  border-top: 1px solid var(--border-light);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.user-profile:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-sm);
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-email {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main-content {
+  flex: 1;
+  background-color: var(--bg-primary);
+  padding: 24px;
+  overflow-y: auto;
+}
