@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .table-container {
+        width: 100%;
+        border: 2px solid black;
+        height: auto;
+        border-radius: 10px;
+        flex: 1;
+        overflow: auto;
+        padding: 12px;
+      }
+
+      .table-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .table-tool-bar {
+        width: 100%;
+        height: 28px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .table-tool-bar-label {
+        width: fit-content;
+        height: 100%;
+        padding: 0 10px 0 6px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: var(--middle-yellow-red);
+        border-radius: 6px;
+      }
+
+      .progress-indicator-icon {
+        width: 17px;
+        height: 17px;
+        background-color: var(--text-primary);
+        border-radius: 5px;
+      }
+
+      .progress-indicator-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .task-progress-number-only {
+        width: 22px;
+        height: 22px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-primary);
+        border-radius: 5px;
+      }
+
+      .actual-table {
+        width: full;
+        flex: 1;
+        border: 2px solid black;
+      }
+
+      .table-header {
+        width: 100%;
+        height: 36px;
+        background-color: red;
+      }
+
+      .table-header-row {
+        height: 100%;
+        border: 2px solid black;
+        padding-left: 12px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .first-row {
+        width: 340px;
+        border-radius: 6px 0 0 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Table Container -->
+    <div class="table-container">
+      <!-- Table 1 -->
+      <div class="table-wrapper">
+        <!-- Table Tool Bar -->
+        <div class="table-tool-bar">
+          <!-- Table Tool Bar Label -->
+          <div class="table-tool-bar-label">
+            <!-- progress-indicator-icon -->
+            <div class="progress-indicator-icon"></div>
+            <span class="progress-indicator-title">In Progress</span>
+          </div>
+          <!-- icon -->
+          <span class="item-icon"></span>
+          <!-- task-progress-number -->
+          <div class="task-progress-number-only">2</div>
+        </div>
+        <!-- actual-table -->
+        <!-- <div class="actual-table"> -->
+        <table>
+          <!-- Table Header -->
+          <thead class="table-header">
+            <tr class="table-header-row first-row">
+              Task
+            </tr>
+            <tr class="table-header-row second-row">
+              Description
+            </tr>
+            <tr class="table-header-row third-row">
+              Assignee
+            </tr>
+            <tr class="table-header-row forth-row">
+              Due Date
+            </tr>
+            <tr class="table-header-row fifth-row">
+              Priority
+            </tr>
+            <tr class="table-header-row sixth-row">
+              Progress
+            </tr>
+            <tr class="table-header-row seventh-row">
+              Create
+            </tr>
+            <tr class="table-header-row last-row">
+              <!-- Icon -->
+            </tr>
+          </thead>
+
+          <!-- Table Body -->
+        </table>
+
+        <!-- </div> -->
+      </div>
+      <!-- Table 2 -->
+    </div>
+  </body>
+</html>
