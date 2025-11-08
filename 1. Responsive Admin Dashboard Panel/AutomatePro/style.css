@@ -63,7 +63,7 @@
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Helvetica Neue", Arial, sans-serif;
-  background-color: var(--bg-secondary);
+  background-color: var(--urgent-red);
   color: var(--text-primary);
   font-size: 14px;
   line-height: 1.5;
@@ -76,7 +76,8 @@ body {
   height: 1024px;
   /* overflow: hidden; */
   /* background-color: var(--chefs-hat); */
-  background-color: crimson;
+  background-color: var(--chefs-hat);
+  align-items: center;
 }
 
 /* Sidebar */
@@ -412,8 +413,233 @@ border: 1px solid gray;
 }
 
 .main-content {
-  flex: 1;
+  width: 1214px;
+  height: 1012px;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* margin: 7px 5px 7px 0; */
+  /* flex: 1; */
   background-color: var(--bg-primary);
-  padding: 24px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
+  display: flex;
+  flex-direction: column;
 }
+
+.main-content-header {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 12px 0px 12px;
+  border-bottom: 2px solid black;
+  
+}
+
+.header-side-section {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.item-text{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.item-icon {
+  width: 17px;
+  height: 17px;
+  background-color: var(--text-primary);
+  border-radius: 5px;
+
+}
+
+.item-container {
+  height: 34px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+.button-container {
+  height: 34px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.button-icon-only-container  {
+  width: 34px;
+  height: 34px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content-tool-box {
+  width: 100%;
+  height: 54px;
+  /* height: 52px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 12px 0px 12px;
+  /* border-bottom: 2px solid black; */
+}
+
+.tool-box-container {
+  width: fit-content;
+  height: 35px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 0px 2px 0px 2px;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.tool-box-item {
+  height: 30px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tool-box-item-active {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.tool-box-button-icon-only-container {
+    width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-box-side-section {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+/* 
+.table-container {
+  width: 100%;
+  border: 2px solid black;
+  height: auto;
+  border-radius: 10px;
+  flex: 1;
+  overflow: auto;
+  padding: 12px;
+}
+
+.table-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.table-tool-bar {
+  width: 100%;
+  height: 28px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-tool-bar-label {
+  width: fit-content;
+  height: 100%;
+  padding: 0 10px 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--middle-yellow-red);
+  border-radius: 6px;
+}
+
+.progress-indicator-icon {
+  width: 17px;
+  height: 17px;
+  background-color: var(--text-primary);
+  border-radius: 5px;
+}
+
+.progress-indicator-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.task-progress-number-only {
+  width: 22px;
+  height: 22px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-radius: 5px;
+}
+
+.actual-table {
+  width: full;
+  flex: 1;
+  border: 2px solid black;
+}
+
+.table-header {
+  width: 100%;
+  height: 36px;
+  background-color: red;
+}
+
+
+.table-header-row {
+  height: 100%;
+  border: 2px solid black;
+  padding-left: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.first-row {
+  width: 340px;
+  border-radius: 6px 0 0 6px;
+}
+ */
+
+
+ 
+
+
