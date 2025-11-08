@@ -176,6 +176,14 @@ body {
   border-radius: 5px;
 }
 
+.chevron-icon {
+  fill: var(--text-secondary);
+}
+
+.light-icon {
+ fill: #B6B7C1;
+}
+
 .sidebar-nav-text {
   font-size: 14px;
   font-weight: 500;
@@ -253,7 +261,18 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px 0 16px 0;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+/* .list-item-icon {
+  fill: var(--text-secondary);
+} */
+
+/* Target the internal shapes (circles and lines) inside the SVG */
+.list-item-icon circle,
+.list-item-icon line {
+  /* Change the stroke color to your desired variable */
+  stroke: var(--text-secondary); 
 }
 
 .nav-section-title-projects-dropdown-list-item {
@@ -266,8 +285,10 @@ body {
 }
 
 .projects-dropdown-list-item-active {
-  background-color: #e0f2fe;
-  border-left: 4px solid var(--primary-blue);
+  /* background-color: #e0f2fe; */
+  background-color: #E6E9F1;
+  border: 1px solid #E0E1E6;
+  /* border-left: 4px solid var(--primary-blue); */
   border-radius: 6px;
   color: var(--primary-blue);
 }
