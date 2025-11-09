@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outlet Buddy - Map UI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: rgba(195, 170, 212, 0.996);
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      /* Left Sidebar */
+      .sidebar {
+        width: 356px;
+        background: #1a1a1a;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      /* Header */
+      .header {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #333;
+      }
+
+      .back-btn {
+        width: 32px;
+        height: 32px;
+        background: none;
+        border: none;
+        color: #9f9f9f;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
+
+      .logo-text {
+        font-size: 15px;
+        font-weight: 600;
+        color: #9f9f9f;
+      }
+
+      .info-btn {
+        width: 32px;
+        height: 32px;
+        background: none;
+        border: 1px solid #666;
+        border-radius: 50%;
+        color: #9f9f9f;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      /* Search */
+      .search-container {
+        padding: 20px;
+      }
+
+      .search-box {
+        position: relative;
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 14px 14px 14px 40px;
+        background: #292929;
+        border: 2px solid #454545;
+        border-radius: 10px;
+        color: #989898;
+        font-size: 11.5px;
+        font-weight: 600;
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+      }
+
+      /* Filters */
+      .filters-section {
+        padding: 0 20px 20px;
+      }
+
+      .filter-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+
+      .filter-label {
+        font-size: 12px;
+        color: #8a8a8a;
+        font-weight: 600;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 8px;
+      }
+
+      .filter-btn {
+        padding: 10px 14px;
+        background: #1a1a1a;
+        border: 1px solid #777;
+        border-radius: 8px;
+        color: #8e8e8e;
+        font-size: 11.5px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .filter-btn.wide {
+        flex: 1;
+      }
+
+      /* Store List */
+      .store-list {
+        flex: 1;
+        overflow-y: auto;
+      }
+
+      .store-item {
+        padding: 20px;
+        border-bottom: 1px solid #2a2a2a;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      .store-item:hover {
+        background: #252525;
+      }
+
+      .store-item.active {
+        background: #252525;
+        border-left: 4px solid #fff;
+      }
+
+      .store-logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 14px;
+        flex-shrink: 0;
+      }
+
+      .store-logo.white {
+        background: #fff;
+        color: #000;
+      }
+
+      .store-logo.pink {
+        background: #ffc0cb;
+        color: #000;
+      }
+
+      .store-logo.yellow {
+        background: #d4a05e;
+        color: #000;
+      }
+
+      .store-logo.gray {
+        background: #999;
+        color: #000;
+      }
+
+      .store-info {
+        flex: 1;
+      }
+
+      .store-name {
+        font-size: 13.8px;
+        font-weight: 600;
+        color: #a7a7a7;
+        margin-bottom: 4px;
+      }
+
+      .store-details {
+        font-size: 9.3px;
+        color: #808080;
+        font-weight: 600;
+      }
+
+      .store-status {
+        color: #489570;
+        margin-left: 4px;
+      }
+
+      .store-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .action-icon {
+        width: 28px;
+        height: 28px;
+        background: none;
+        border: none;
+        color: #666;
+        cursor: pointer;
+      }
+
+      /* Map Area */
+      .map-area {
+        flex: 1;
+        position: relative;
+        background: #2a2a2a;
+        overflow: hidden;
+      }
+
+      /* Map background with streets */
+      .map-background {
+        width: 100%;
+        height: 100%;
+        background: #2a2a2a;
+        position: relative;
+      }
+
+      .map-background svg {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      /* Map Markers */
+      .map-marker {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .marker-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+
+      .marker-badge {
+        background: #1a1a1a;
+        color: #8a8a8a;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      /* Position markers */
+      .marker-1 {
+        top: 20%;
+        left: 35%;
+      }
+      .marker-2 {
+        top: 15%;
+        right: 8%;
+      }
+      .marker-3 {
+        bottom: 25%;
+        right: 15%;
+      }
+      .marker-4 {
+        bottom: 30%;
+        left: 45%;
+      }
+      .marker-5 {
+        bottom: 35%;
+        right: 8%;
+      }
+
+      /* Details Card */
+      .details-card {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 297px;
+        background: #1b1b1b;
+        border: 1px solid #202020;
+        border-radius: 19px;
+        padding: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      }
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      .card-logo {
+        width: 48px;
+        height: 48px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .card-info h3 {
+        font-size: 13.8px;
+        font-weight: 600;
+        color: #a7a7a7;
+        margin-bottom: 4px;
+      }
+
+      .card-meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 9.3px;
+      }
+
+      .card-meta .distance {
+        color: #7f7f7f;
+      }
+
+      .card-meta .dot {
+        width: 3px;
+        height: 3px;
+        background: #666;
+        border-radius: 50%;
+      }
+
+      .card-meta .status {
+        color: #489570;
+      }
+
+      /* Info Badges */
+      .info-badges {
+        background: #282828;
+        border: 1px solid #666;
+        border-radius: 4px;
+        padding: 10px 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .badge-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 9.3px;
+        color: #7f7f7f;
+        font-weight: 600;
+      }
+
+      /* Description */
+      .card-title {
+        font-size: 13.3px;
+        font-weight: 600;
+        color: #a0a0a0;
+        margin-bottom: 8px;
+        line-height: 16px;
+      }
+
+      .card-description {
+        font-size: 8.8px;
+        color: #8d8d8d;
+        line-height: 13px;
+        margin-bottom: 16px;
+      }
+
+      /* More Details Button */
+      .more-details-btn {
+        width: 100%;
+        padding: 15px;
+        background: #262626;
+        border: 1px solid #545454;
+        border-radius: 10px;
+        color: #a1a1a1;
+        font-size: 12.1px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      .more-details-btn:hover {
+        background: #303030;
+      }
+
+      /* Icons (using Unicode) */
+      .icon-search::before {
+        content: "🔍";
+      }
+      .icon-nav::before {
+        content: "📍";
+      }
+      .icon-time::before {
+        content: "⏰";
+      }
+      .icon-star::before {
+        content: "⭐";
+      }
+      .icon-dollar::before {
+        content: "💲";
+      }
+      .icon-arrow::before {
+        content: "←";
+      }
+      .icon-info::before {
+        content: "ⓘ";
+      }
+      .icon-filter::before {
+        content: "☰";
+      }
+      .icon-dropdown::before {
+        content: "▼";
+        font-size: 8px;
+      }
+
+      /* Route Path */
+      .route-path {
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        width: 300px;
+        height: 400px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Sidebar -->
+      <div class="sidebar">
+        <!-- Header -->
+        <div class="header">
+          <button class="back-btn icon-arrow"></button>
+          <div class="logo-container">
+            <div class="logo-icon icon-nav"></div>
+            <span class="logo-text">outletbuddy</span>
+          </div>
+          <button class="info-btn icon-info"></button>
+        </div>
+
+        <!-- Search -->
+        <div class="search-container">
+          <div class="search-box">
+            <span class="search-icon icon-search"></span>
+            <input type="text" class="search-input" placeholder="Search..." />
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters-section">
+          <div class="filter-labels">
+            <span class="filter-label">Show me:</span>
+            <span class="filter-label">Sort by:</span>
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn wide">
+              Open Now
+              <span class="icon-dropdown"></span>
+            </button>
+            <button class="filter-btn wide">
+              Nearest
+              <span class="icon-dropdown"></span>
+            </button>
+            <button class="filter-btn">
+              <span class="icon-filter"></span>
+              Filters
+            </button>
+          </div>
+        </div>
+
+        <!-- Store List -->
+        <div class="store-list">
+          <div class="store-item active">
+            <div class="store-logo white">adidas</div>
+            <div class="store-info">
+              <div class="store-name">Adidas</div>
+              <div class="store-details">
+                0.5 mi • <span class="store-status">Open 'til 6pm</span>
+              </div>
+            </div>
+            <div class="store-actions">
+              <button class="action-icon icon-nav"></button>
+              <button class="action-icon icon-time"></button>
+            </div>
+          </div>
+
+          <div class="store-item">
+            <div class="store-logo pink">✓</div>
+            <div class="store-info">
+              <div class="store-name">Nike</div>
+              <div class="store-details">
+                0.7 mi • <span class="store-status">Open 'til 6pm</span>
+              </div>
+            </div>
+            <div class="store-actions">
+              <button class="action-icon icon-nav"></button>
+              <button class="action-icon icon-time"></button>
+            </div>
+          </div>
+
+          <div class="store-item">
+            <div class="store-logo white">🐆</div>
+            <div class="store-info">
+              <div class="store-name">Puma</div>
+              <div class="store-details">
+                0.3 mi • <span class="store-status">Open 'til 6pm</span>
+              </div>
+            </div>
+            <div class="store-actions">
+              <button class="action-icon icon-nav"></button>
+              <button class="action-icon icon-time"></button>
+            </div>
+          </div>
+
+          <div class="store-item">
+            <div class="store-logo white">UA</div>
+            <div class="store-info">
+              <div class="store-name">Under Armour</div>
+              <div class="store-details">
+                0.2 mi • <span class="store-status">Open 'til 6pm</span>
+              </div>
+            </div>
+            <div class="store-actions">
+              <button class="action-icon icon-nav"></button>
+              <button class="action-icon icon-time"></button>
+            </div>
+          </div>
+
+          <div class="store-item">
+            <div class="store-logo yellow">🌲</div>
+            <div class="store-info">
+              <div class="store-name">Timberland</div>
+              <div class="store-details">
+                0.4 mi • <span class="store-status">Open 'til 6pm</span>
+              </div>
+            </div>
+            <div class="store-actions">
+              <button class="action-icon icon-nav"></button>
+              <button class="action-icon icon-time"></button>
+            </div>
+          </div>
+
+          <div class="store-item">
+            <div class="store-logo gray">EA7</div>
+            <div class="store-info">
+              <div class="store-name">EA7 Emporio Armani</div>
+              <div class="store-details">
+                2.1 mi • <span class="store-status">Open 'til 6pm</span>
+              </div>
+            </div>
+            <div class="store-actions">
+              <button class="action-icon icon-nav"></button>
+              <button class="action-icon icon-time"></button>
+            </div>
+          </div>
+
+          <div class="store-item">
+            <div class="store-logo gray">⭐</div>
+            <div class="store-info">
+              <div class="store-name">Converse</div>
+              <div class="store-details">
+                2.5 mi • <span class="store-status">Open 'til 6pm</span>
+              </div>
+            </div>
+            <div class="store-actions">
+              <button class="action-icon icon-nav"></button>
+              <button class="action-icon icon-time"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Area -->
+      <div class="map-area">
+        <div class="map-background">
+          <svg>
+            <defs>
+              <pattern
+                id="grid"
+                width="40"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 40 0 L 0 0 0 40"
+                  fill="none"
+                  stroke="#444"
+                  stroke-width="0.5"
+                />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+            <!-- Street lines -->
+            <path d="M 200 100 L 800 150" stroke="#555" stroke-width="2" />
+            <path d="M 300 50 L 400 800" stroke="#555" stroke-width="2" />
+            <path d="M 600 0 L 650 900" stroke="#555" stroke-width="2" />
+            <path d="M 100 400 L 900 450" stroke="#555" stroke-width="2" />
+            <path d="M 50 600 L 1000 580" stroke="#555" stroke-width="2" />
+            <!-- Route path -->
+            <path
+              d="M 500 200 Q 550 300 600 400 Q 620 500 580 600"
+              fill="none"
+              stroke="#4ade80"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+
+        <!-- Map Markers -->
+        <div class="map-marker marker-1">
+          <div class="marker-icon" style="background: #fff">adidas</div>
+          <div class="marker-badge"><span class="icon-star"></span> 100</div>
+        </div>
+
+        <div class="map-marker marker-2">
+          <div class="marker-icon" style="background: #ffc0cb">✓</div>
+          <div class="marker-badge"><span class="icon-time"></span> 15</div>
+        </div>
+
+        <div class="map-marker marker-3">
+          <div class="marker-icon" style="background: #ff6b6b">🐆</div>
+          <div class="marker-badge"><span class="icon-star"></span> 100</div>
+        </div>
+
+        <div class="map-marker marker-4">
+          <div class="marker-icon" style="background: #d4a05e">🌲</div>
+          <div class="marker-badge"><span class="icon-star"></span> 80</div>
+        </div>
+
+        <div class="map-marker marker-5">
+          <div class="marker-icon" style="background: #fff">UA</div>
+          <div class="marker-badge"><span class="icon-star"></span> 80</div>
+        </div>
+
+        <!-- Details Card -->
+        <div class="details-card">
+          <div class="card-header">
+            <div class="card-logo">adidas</div>
+            <div class="card-info">
+              <h3>Adidas</h3>
+              <div class="card-meta">
+                <span class="distance">0.5 mi</span>
+                <span class="dot"></span>
+                <span class="status">Open 'til 6pm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-badges">
+            <div class="badge-item"><span class="icon-star"></span> 100</div>
+            <div class="badge-item">
+              <span class="icon-time"></span> Open 'til 6pm
+            </div>
+            <div class="badge-item">
+              <span class="icon-dollar"></span> $$$$$
+            </div>
+          </div>
+
+          <h4 class="card-title">The largest Adidas store in the city</h4>
+          <p class="card-description">
+            Adidas is a German company, one of the world's leading sporting
+            goods manufacturers. It was founded in 1924 by the Dassler brothers
+            as Dassler.
+          </p>
+
+          <button class="more-details-btn">More Details</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
