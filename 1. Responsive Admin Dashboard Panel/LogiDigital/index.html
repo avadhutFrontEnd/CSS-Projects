@@ -204,32 +204,66 @@
           <!-- Buttons -->
           <div class="buttons-container">
             <!-- Notification Button -->
-            <button class="icon-button" aria-label="Notifications">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                ></path>
-              </svg>
-            </button>
+            <div class="buttons-icon-container">
+              <button class="icon-button" aria-label="Notifications">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  ></path>
+                </svg>
+              </button>
 
-            <!-- Chat Button -->
-            <button class="icon-button" aria-label="Messages">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                ></path>
-              </svg>
-            </button>
+              <!-- Chat Button -->
+              <button class="icon-button" aria-label="Messages">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
 
             <!-- Logo Button -->
             <button class="logo-button">
-              <span class="logo-icon"></span>
+              <!-- <span class="logo-icon"> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="22"
+                height="22"
+                viewBox="0,0,256,256"
+              >
+                <g
+                  fill="#8b5cf6"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M25.00391,2.33398c-0.17825,0 -0.35712,0.04758 -0.51562,0.14258l-19.00391,11.41992c-0.301,0.181 -0.48437,0.50642 -0.48437,0.85742v20.46875c0,0.349 0.18052,0.67152 0.47852,0.85352l5,3.05273c0.666,0.407 1.52148,-0.07352 1.52148,-0.85352v-20.16211l13,-7.93945l13,7.93945v20.20117c0,0.78 0.85353,1.26047 1.51953,0.85547l5,-3.03906c0.299,-0.182 0.48047,-0.50547 0.48047,-0.85547v-20.52148c0,-0.351 -0.18337,-0.67642 -0.48437,-0.85742l-18.99805,-11.41992c-0.1585,-0.095 -0.33542,-0.14258 -0.51367,-0.14258zM21.99805,17.17578c-0.17381,0.00013 -0.35303,0.04669 -0.51953,0.14844l-5,3.05469c-0.298,0.182 -0.47852,0.50356 -0.47852,0.85156v20.79297c0,0.351 0.18338,0.67642 0.48438,0.85742l8.00391,4.80859c0.317,0.191 0.7123,0.19 1.0293,0l7.99805,-4.80664c0.301,-0.181 0.48438,-0.50642 0.48438,-0.85742v-20.79492c0,-0.348 -0.18052,-0.67056 -0.47852,-0.85156l-5,-3.05469c-0.666,-0.407 -1.52148,0.07251 -1.52148,0.85352v20.59375l-2,1.22266l-2,-1.22266v-20.59375c0,-0.58575 -0.48052,-1.00233 -1.00195,-1.00195z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <!-- </span> -->
               <span>LogiDigital</span>
             </button>
           </div>
@@ -247,11 +281,48 @@
               <!-- Top Buttons : Back and Vehicles Row -->
               <div class="back-vehicles-row">
                 <button class="back-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-back-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14l-4 -4l4 -4" /><path d="M5 10h11a4 4 0 1 1 0 8h-1" /></svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-back-up"
+                    style="color: var(--text-secondary)"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 14l-4 -4l4 -4" />
+                    <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+                  </svg>
                   Back
                 </button>
                 <div class="vehicles-nearby">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-math-max-min"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M3 14s.605 -5.44 2.284 -7.862m3.395 .026c2.137 2.652 4.547 9.113 6.68 11.719" /><path d="M18.748 18.038c.702 -.88 1.452 -3.56 2.252 -8.038" /></svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-math-max-min"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path
+                      d="M3 14s.605 -5.44 2.284 -7.862m3.395 .026c2.137 2.652 4.547 9.113 6.68 11.719"
+                    />
+                    <path
+                      d="M18.748 18.038c.702 -.88 1.452 -3.56 2.252 -8.038"
+                    />
+                  </svg>
                   3 Vehicle nearby
                 </div>
               </div>
@@ -298,7 +369,15 @@
 
                 <!-- Vehicle Info Card -->
                 <div class="vehicle-info-card">
-                  <div class="vehicle-icon"></div>
+                  <div class="vehicle-icon">
+                    <img
+                      style="border-radius: 12px"
+                      width="48"
+                      height="48"
+                      src="./assets/Monosnap Volvo FMX 460 33 CU.M Tipper Images and P.png"
+                      alt=""
+                    />
+                  </div>
                   <div class="vehicle-details">
                     <div class="vehicle-label">Vehicle Name</div>
                     <div class="vehicle-name">Volvo BM-390</div>
@@ -337,7 +416,40 @@
                   <div class="last-update-section">
                     <div class="section-header">
                       <span class="section-title">Last update</span>
-                      <span class="date-text">March 7, 2023</span>
+                      <span class="date-text">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="17"
+                          height="17"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"
+                          style="color: #9ca3af"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M15 6l-6 6l6 6" />
+                        </svg>
+                        <span>March 7, 2023</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="17"
+                          height="17"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                          style="color: #9ca3af"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M9 6l6 6l-6 6" /></svg
+                      ></span>
                     </div>
 
                     <!-- Timeline Chart -->
@@ -382,23 +494,25 @@
                   <div class="timeline-section">
                     <div class="timeline-header">
                       <div>
-                        <div class="timeline-title">Timeline</div>
-                        <div class="timeline-updated">updated 5 min ago</div>
+                        <span class="timeline-title">Timeline</span>
+                        <span class="timeline-updated">updated 5 min ago</span>
                       </div>
                       <button class="refresh-button">
                         <svg
+                          xmlns="http://www.w3.org/2000/svg"
                           width="14"
                           height="14"
+                          viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
-                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-refresh"
                         >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                          ></path>
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                          <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
                         </svg>
                         Refresh
                       </button>
