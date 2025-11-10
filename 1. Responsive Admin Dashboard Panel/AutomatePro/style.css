@@ -526,6 +526,7 @@ body {
   /* border-bottom: 2px solid black; */
 }
 
+/* CUT this Below */
 .tool-box-container {
   width: fit-content;
   height: 35px;
@@ -579,6 +580,7 @@ body {
   gap: 4px;
 }
 
+/* CUT this above */
 .table-container {
   width: 100%;
   border: none;
@@ -684,7 +686,8 @@ body {
   font-weight: 600;
   color: var(--text-secondary);
   border-bottom: 1px solid var(--border-light);
-  background-color: var(--bg-primary);
+  /* background-color: var(--bg-primary); */
+  background-color: #F9FBFC;
 }
 
 .table-header th:first-child {
@@ -714,7 +717,12 @@ body {
   border-bottom: 1px solid var(--border-light);
   border-left: none;
   background-color: var(--bg-primary);
+  border-right: 1px solid var(--border-light);
 }
+
+/* .task-table td:last-child {
+  border-right: 0;
+} */
 
 .task-cell {
   display: flex;
